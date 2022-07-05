@@ -4,7 +4,7 @@ interface ESIConstellation {
   constellation_id: number;
   name: string;
   position: ESIPosition;
-  region_id: 10000013;
+  region_id: number;
   systems: number[];
 }
 

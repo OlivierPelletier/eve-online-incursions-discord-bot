@@ -1,13 +1,13 @@
-
 interface IncursionInfo {
   constellationName: string;
-  faction_id: number;
-  has_boss: boolean;
-  infested_solar_systems: string[];
+  headquarterSystem: string;
+  assaultSystems: string[];
+  vanguardSystems: string[];
+  stagingSystem: string;
   influence: number;
-  staging_solar_system_name: string;
   state: string;
-  type: string;
+  numberOfJumpsFromLastIncursion: string;
+  regionIconUrl: string;
 }
 
 export default IncursionInfo;

@@ -1,0 +1,14 @@
+{
+  "Agiesseson": {
+    "staging_system": "Claysson",
+    "vanguard_systems": ["Adiere", "Oirtlair", "Olelon", "Stetille"],
+    "assault_systems": ["Auberulle", "Doussivitte"],
+    "headquarter_system": "Unel"
+  },
+  "Brazinget": {
+    "staging_system": "Lumegen",
+    "vanguard_systems": ["Gedugaud", "Oppold", "Tratokard"],
+    "assault_systems": ["Geffur"],
+    "headquarter_system": "Hilfhurmur"
+  }
+}
