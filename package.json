@@ -1,0 +1,35 @@
+{
+  "name": "eve-online-incursion-discord-bot",
+  "version": "1.0.0",
+  "description": "An EVE Online Discord bot for incursion enthousiast.",
+  "repository": "https://github.com/OlivierPelletier/eve-online-incursion-discord-bot",
+  "author": "Olivier Pelletier",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "axios": "^0.27.2",
+    "discord-api-types": "^0.36.0",
+    "discord.js": "^13.8.1",
+    "ws": "^8.8.0"
+  },
+  "scripts": {
+    "bot": "ts-node src/Bot.ts",
+    "deploy": "ts-node src/DeployCommands.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1",
+    "ts-node": "^10.8.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  }
+}
