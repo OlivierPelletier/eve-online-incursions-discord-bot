@@ -32,6 +32,7 @@ https://discord.com/api/oauth2/authorize?client_id=<CLIENT_ID>&permissions=53472
 
 To find your server id (guildId) and channel id, you need to enable development mode on Discord and right-click on your channel/server and press "Copy ID".
 Also, don't forget to generate a token for your bot and put it in the config file.
+
 **src/config/config.json**
 
 ```json
