@@ -20,6 +20,8 @@ The project was developped on macOS 12.4 with the versions listed above. Might w
 
 ### Add the bot to a server
 
+Read official doc [here](https://discordjs.guide/preparations/setting-up-a-bot-application.html) to create your own Discord application and bot.
+
 Replace CLIENT_ID by your own Discord application client id.
 
 ```
@@ -28,6 +30,8 @@ https://discord.com/api/oauth2/authorize?client_id=<CLIENT_ID>&permissions=53472
 
 ### Configure the bot
 
+To find your server id (guildId) and channel id, you need to enable development mode on Discord and right-click on your channel/server and press "Copy ID".
+Also, don't forget to generate a token for your bot and put it in the config file.
 **src/config/config.json**
 
 ```json
