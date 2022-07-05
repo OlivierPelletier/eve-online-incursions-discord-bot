@@ -1,10 +1,25 @@
 # EVE Online incursions Discord bot
 
-An EVE Online Discord bot for incursion enthousiast.
+An EVE Online Discord bot for incursions enthousiast.
 
-## Setup
+## Sponsors
+
+- Kevin "Twiggys" T.
+
+New features for this bot are mainly motivated by ISK/PLEX donation. If you want to sponsor a new feature for this bot, DM me on discord @Opet#1246.
+
+## Development setup
+
+### Requirements
+
+- node.js (v16.15.X)
+- npm (8.13.X)
+- yarn (1.22.X)
+
+The project was developped on macOS 12.4 with the versions listed above. Might work with older/newer versions.
 
 ### Add the bot to a server
+
 Replace CLIENT_ID by your own Discord application client id.
 
 ```
@@ -19,8 +34,16 @@ https://discord.com/api/oauth2/authorize?client_id=<CLIENT_ID>&permissions=53472
 {
   "clientId": "APP_CLIENT_ID",
   "guildId": "DISCORD_SERVER_ID",
-  "token": "APP_BOT_TOKEN"
+  "channelId": "DISCORD_CHANNEL_ID",
+  "token": "APP_BOT_TOKEN",
+  "highSecOnly": true
 }
+```
+
+### Install dependencies
+
+```
+yarn install
 ```
 
 ### Deploy slash commands
@@ -34,3 +57,16 @@ yarn run deploy
 ```
 yarn run bot
 ```
+
+## Bot features
+
+### Slash commands
+
+- /incursions (shows current incursion information )
+
+## TODOs
+
+- Automatically send new incursion information to the Discord channel
+- Add missing information to the embed message (number of jump of last incursion, timestamp)
+- Create a Docker image for the project
+- Write installation instructions
