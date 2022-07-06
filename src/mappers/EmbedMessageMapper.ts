@@ -42,7 +42,9 @@ class EmbedMessageMapper {
             incursionInfo.numberOfJumpsFromLastIncursion
           } jumps\n**Influence level:** ${Math.round(
             incursionInfo.influence * 100
-          )}%`,
+          )}%\n**Island constellation:** ${
+            incursionInfo.isIslandConstellation
+          }`,
           inline: true,
         },
         {

@@ -8,6 +8,7 @@ interface IncursionInfo {
   state: string;
   numberOfJumpsFromLastIncursion: string;
   regionIconUrl: string;
+  isIslandConstellation: string;
 }
 
 export default IncursionInfo;

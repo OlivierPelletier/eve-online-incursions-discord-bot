@@ -112,7 +112,7 @@ class BotController {
         let regionIconUrl = this.regionIconService.findRegionIconUrl(
           constellationInfo.region_id
         );
-        const incursionInfo: IncursionConstellationLayout | null =
+        const incursionConstellationLayout: IncursionConstellationLayout | null =
           this.incursionLayoutService.findIncursionLayout(
             constellationInfo.name
           );
@@ -125,12 +125,15 @@ class BotController {
         let headquarterSystem = "N/A";
         let vanguardSystems = ["N/A"];
         let assaultSystems = ["N/A"];
+        let isIslandConstellation = "N/A";
 
-        if (incursionInfo != null) {
-          stagingSystem = incursionInfo.staging_system;
-          headquarterSystem = incursionInfo.headquarter_system;
-          vanguardSystems = incursionInfo.vanguard_systems;
-          assaultSystems = incursionInfo.assault_systems;
+        if (incursionConstellationLayout != null) {
+          stagingSystem = incursionConstellationLayout.staging_system;
+          headquarterSystem = incursionConstellationLayout.headquarter_system;
+          vanguardSystems = incursionConstellationLayout.vanguard_systems;
+          assaultSystems = incursionConstellationLayout.assault_systems;
+          isIslandConstellation =
+            incursionConstellationLayout.is_island_constellation ? "Yes" : "No";
         }
 
         incursionInfos.push({
@@ -143,6 +146,7 @@ class BotController {
           numberOfJumpsFromLastIncursion: "5",
           influence: 1 - esiIncursion.influence,
           state: esiIncursion.state,
+          isIslandConstellation,
         });
       }
     });
