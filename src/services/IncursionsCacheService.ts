@@ -111,7 +111,8 @@ class IncursionsCacheService {
     });
 
     if (newPotentialLastIncursion.length > 0) {
-      newPotentialLastIncursion.sort((a, b) => b.timestamp - a.timestamp);
+      newPotentialLastIncursion.sort((a, b) => b.createdAt - a.createdAt);
+      newPotentialLastIncursion[0].updatedAt = Date.now();
       this.saveLastIncursion(newPotentialLastIncursion[0]);
     }
 

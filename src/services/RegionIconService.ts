@@ -1,10 +1,10 @@
-import regionIcons from "../config/region_icons.json";
+import { regions } from "../config/icon_urls.json";
 
 class RegionIconService {
   private readonly regionIconsDict: { [regionId: number]: string };
 
   constructor() {
-    this.regionIconsDict = regionIcons;
+    this.regionIconsDict = regions;
   }
 
   findRegionIconUrl(regionId: number): string | null {

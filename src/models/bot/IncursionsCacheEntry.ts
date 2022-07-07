@@ -1,7 +1,8 @@
 import IncursionInfo from "./IncursionInfo";
 
 interface IncursionsCacheEntry {
-  timestamp: number;
+  createdAt: number;
+  updatedAt: number;
   messageId: string;
   incursionInfo: IncursionInfo;
 }

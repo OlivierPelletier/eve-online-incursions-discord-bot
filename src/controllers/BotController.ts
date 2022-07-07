@@ -54,7 +54,7 @@ class BotController {
           );
 
         if (cachedIncursionInfo != null) {
-          incursionInfos[index].timestamp = cachedIncursionInfo.timestamp;
+          incursionInfos[index].createdAt = cachedIncursionInfo.createdAt;
           incursionInfos[index].messageId = cachedIncursionInfo.messageId;
         }
       });
@@ -74,7 +74,9 @@ class BotController {
         }
       });
     } else {
-      const embedMessage = this.embedMessageMapper.noIncursionToEmbedMessage();
+      const embedMessage = this.embedMessageMapper.noIncursionToEmbedMessage(
+        this.incursionsCacheService.findLastIncursion()
+      );
       if (interaction.channel != null) {
         promiseList.push(interaction.channel.send({ embeds: [embedMessage] }));
       }
@@ -108,7 +110,8 @@ class BotController {
     if (incursionInfos != null) {
       incursionInfos.forEach((incursionInfo) => {
         incursionCacheEntries.push({
-          timestamp: Date.now(),
+          createdAt: Date.now(),
+          updatedAt: Date.now(),
           messageId: "",
           incursionInfo,
         });
