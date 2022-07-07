@@ -23,7 +23,7 @@ class EmbedMessageMapper {
       .setColor(this.purpleColor)
       .addFields([
         {
-          name: "Next spawn window in starts in",
+          name: "Next spawn window starts in",
           value: `8 hours`,
           inline: true,
         },
