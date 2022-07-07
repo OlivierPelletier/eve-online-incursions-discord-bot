@@ -1,7 +1,8 @@
-import ESICharacter from "./ESICharacter";
+import ESIIdResponse from "./ESIIdResponse";
 
 interface ESIUniverseIdsResponse {
-  characters: ESICharacter[];
+  characters: ESIIdResponse[];
+  systems: ESIIdResponse[];
 }
 
 export default ESIUniverseIdsResponse;

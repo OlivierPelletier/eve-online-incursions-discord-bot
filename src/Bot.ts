@@ -1,9 +1,9 @@
 import { Client, Intents, Message, TextChannel } from "discord.js";
 import { EmbedBuilder } from "@discordjs/builders";
-import { token, channelId } from "./config/config.json";
+import { channelId, token } from "./config/config.json";
 import BotController from "./controllers/BotController";
-import IncursionInfo from "./models/bot/IncursionInfo";
 import EmbedMessageMapper from "./mappers/EmbedMessageMapper";
+import IncursionsCacheEntry from "./models/bot/IncursionsCacheEntry";
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
@@ -28,7 +28,7 @@ client.on("interactionCreate", async (interaction) => {
       "Retrieving incursions informations..."
     ).data;
     await interaction.reply({ embeds: [loadingEmbed] });
-    const incursionInfos: IncursionInfo[] | null =
+    const incursionInfos: IncursionsCacheEntry[] | null =
       await botController.incursions();
 
     const promiseList: Promise<Message>[] = [];

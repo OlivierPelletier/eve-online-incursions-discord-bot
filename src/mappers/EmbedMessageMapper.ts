@@ -1,6 +1,6 @@
 import { MessageEmbed } from "discord.js";
-import IncursionInfo from "../models/bot/IncursionInfo";
 import ESIIncursionState from "../models/esi/ESIIncursionState";
+import IncursionsCacheEntry from "../models/bot/IncursionsCacheEntry";
 
 class EmbedMessageMapper {
   yellowColor: number = 0x00b129;
@@ -9,8 +9,12 @@ class EmbedMessageMapper {
 
   redColor: number = 0xb11500;
 
-  incursionInfoToEmbedMessage(incursionInfo: IncursionInfo): MessageEmbed {
+  incursionInfoToEmbedMessage(
+    incursionsCacheEntry: IncursionsCacheEntry
+  ): MessageEmbed {
     let color: number = 0x5d0085;
+
+    const { incursionInfo, timestamp } = incursionsCacheEntry;
 
     if (incursionInfo.state === ESIIncursionState.ESTABLISHED.toString()) {
       color = this.yellowColor;
@@ -24,6 +28,9 @@ class EmbedMessageMapper {
       color = this.redColor;
     }
 
+    const date = new Date();
+    date.setUTCMinutes(timestamp);
+
     return new MessageEmbed()
       .setAuthor({
         name: `${incursionInfo.constellationName}`,
@@ -33,7 +40,7 @@ class EmbedMessageMapper {
       .setTitle(
         `**${incursionInfo.constellationName} is now in ${incursionInfo.state} state**`
       )
-      .setDescription(`Detected on 2022-07-05 at 17:00`)
+      .setDescription(`Detected on ${date.toISOString()}`)
       .setColor(color)
       .addFields([
         {
