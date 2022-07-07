@@ -9,17 +9,19 @@ import RegionIconService from "./RegionIconService";
 import IncursionLayoutService from "./IncursionLayoutService";
 
 class IncursionInfoService {
-  esiService: ESIService;
+  private readonly esiService: ESIService;
 
-  regionIconService: RegionIconService;
+  private readonly regionIconService: RegionIconService;
 
-  incursionLayoutService: IncursionLayoutService;
+  private readonly incursionLayoutService: IncursionLayoutService;
 
-  esiSystemInfoByIdDict: { [systemId: number]: ESISystem };
+  private readonly esiSystemInfoByIdDict: { [systemId: number]: ESISystem };
 
-  esiSystemInfoByNameDict: { [systemName: string]: ESISystem };
+  private readonly esiSystemInfoByNameDict: { [systemName: string]: ESISystem };
 
-  esiConstellationInfoDict: { [constellationId: number]: ESIConstellation };
+  private readonly esiConstellationInfoDict: {
+    [constellationId: number]: ESIConstellation;
+  };
 
   constructor(
     _esiService: ESIService,
@@ -48,15 +50,10 @@ class IncursionInfoService {
 
     const incursionInfos: IncursionInfo[] = [];
     const promiseList: Promise<void>[] = [];
-    let lastHqSystemId: number | null = null;
-
-    if (lastIncursionInfo != null) {
-      lastHqSystemId = lastIncursionInfo.headquarterSystemId;
-    }
 
     esiIncursionInfos.forEach((esiIncursion) => {
       promiseList.push(
-        this.findCompletedIncursionInfo(esiIncursion, lastHqSystemId).then(
+        this.findCompletedIncursionInfo(esiIncursion, lastIncursionInfo).then(
           (incursionInfo) => {
             if (incursionInfo != null) {
               incursionInfos.push(incursionInfo);
@@ -116,7 +113,7 @@ class IncursionInfoService {
 
   private async findCompletedIncursionInfo(
     esiIncursion: ESIIncursion,
-    lastIncursionHeadquarterSystemId: number | null
+    lastIncursionInfo: IncursionInfo | null
   ): Promise<IncursionInfo | null> {
     const constellationInfo: ESIConstellation | undefined =
       this.esiConstellationInfoDict[esiIncursion.constellation_id];
@@ -162,6 +159,7 @@ class IncursionInfoService {
       let assaultSystems = ["N/A"];
       let isIslandConstellation = "N/A";
       let numberOfJumpsFromLastIncursion = "N/A";
+      let lastIncursionSystemName = "N/A";
 
       if (incursionConstellationLayout != null) {
         stagingSystem = incursionConstellationLayout.staging_system;
@@ -175,14 +173,20 @@ class IncursionInfoService {
         isIslandConstellation =
           incursionConstellationLayout.is_island_constellation ? "Yes" : "No";
 
-        if (lastIncursionHeadquarterSystemId != null) {
-          const route = await this.esiService.getRouteInfo(
-            lastIncursionHeadquarterSystemId,
-            headquarterSystemId
-          );
+        if (lastIncursionInfo != null) {
+          if (lastIncursionInfo.headquarterSystemId != null) {
+            const route = await this.esiService.getRouteInfo(
+              lastIncursionInfo.headquarterSystemId,
+              headquarterSystemId
+            );
 
-          if (route != null) {
-            numberOfJumpsFromLastIncursion = (route.length - 1).toString();
+            if (route != null) {
+              numberOfJumpsFromLastIncursion = (route.length - 1).toString();
+            }
+          }
+
+          if (lastIncursionInfo.lastIncursionSystemName != null) {
+            lastIncursionSystemName = lastIncursionInfo.lastIncursionSystemName;
           }
         }
       }
@@ -200,6 +204,7 @@ class IncursionInfoService {
         influence: 1 - esiIncursion.influence,
         state: esiIncursion.state,
         isIslandConstellation,
+        lastIncursionSystemName,
       };
     }
 

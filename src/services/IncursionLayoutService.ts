@@ -2,7 +2,7 @@ import IncursionConstellationLayout from "../models/bot/IncursionConstellationLa
 import incursionsLayout from "../config/incursion_layouts.json";
 
 class IncursionLayoutService {
-  incursionLayoutsDict: {
+  private readonly incursionLayoutsDict: {
     [constellationName: string]: IncursionConstellationLayout;
   };
 

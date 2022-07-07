@@ -1,4 +1,5 @@
-import { TextChannel } from "discord.js";
+import { CommandInteraction, Message, TextChannel } from "discord.js";
+import { EmbedBuilder } from "@discordjs/builders";
 import ESIService from "../services/ESIService";
 import IncursionInfo from "../models/bot/IncursionInfo";
 import IncursionLayoutService from "../services/IncursionLayoutService";
@@ -6,22 +7,26 @@ import RegionIconService from "../services/RegionIconService";
 import IncursionsCacheEntry from "../models/bot/IncursionsCacheEntry";
 import IncursionsCacheService from "../services/IncursionsCacheService";
 import IncursionInfoService from "../services/IncursionInfoService";
+import EmbedMessageMapper from "../mappers/EmbedMessageMapper";
 
 class BotController {
-  channel: TextChannel;
+  private readonly channel: TextChannel;
 
-  esiService: ESIService;
+  private readonly embedMessageMapper: EmbedMessageMapper;
 
-  incursionLayoutService: IncursionLayoutService;
+  private readonly esiService: ESIService;
 
-  regionIconService: RegionIconService;
+  private readonly incursionLayoutService: IncursionLayoutService;
 
-  incursionsCacheService: IncursionsCacheService;
+  private readonly regionIconService: RegionIconService;
 
-  incursionsInfoService: IncursionInfoService;
+  private readonly incursionsCacheService: IncursionsCacheService;
+
+  private readonly incursionsInfoService: IncursionInfoService;
 
   constructor(_channel: TextChannel) {
     this.channel = _channel;
+    this.embedMessageMapper = new EmbedMessageMapper();
     this.esiService = new ESIService();
     this.incursionLayoutService = new IncursionLayoutService();
     this.regionIconService = new RegionIconService();
@@ -33,7 +38,38 @@ class BotController {
     );
   }
 
-  async incursions(): Promise<IncursionsCacheEntry[] | null> {
+  async commandIncursions(interaction: CommandInteraction) {
+    const loadingEmbed = new EmbedBuilder().setDescription(
+      "Retrieving incursions informations..."
+    ).data;
+    await interaction.reply({ embeds: [loadingEmbed] });
+    const incursionInfos: IncursionsCacheEntry[] | null =
+      await this.incursions();
+
+    if (incursionInfos != null) {
+      this.incursionsCacheService.saveCurrentIncursions(incursionInfos);
+    }
+
+    const promiseList: Promise<Message>[] = [];
+
+    if (incursionInfos != null) {
+      incursionInfos.forEach((incursionInfo) => {
+        const embedMessage =
+          this.embedMessageMapper.incursionInfoToEmbedMessage(incursionInfo);
+
+        if (interaction.channel != null) {
+          promiseList.push(
+            interaction.channel.send({ embeds: [embedMessage] })
+          );
+        }
+      });
+    }
+
+    await Promise.all(promiseList);
+    await interaction.deleteReply();
+  }
+
+  private async incursions(): Promise<IncursionsCacheEntry[] | null> {
     const lastIncursionCache: IncursionsCacheEntry | null =
       this.incursionsCacheService.findLastIncursion();
     let lastIncursionInfo: IncursionInfo | null = null;

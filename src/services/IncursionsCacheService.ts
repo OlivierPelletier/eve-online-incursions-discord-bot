@@ -3,7 +3,9 @@ import IncursionsCacheEntry from "../models/bot/IncursionsCacheEntry";
 import IncursionsCache from "../models/bot/IncursionsCache";
 
 class IncursionsCacheService {
-  incursionsCache: IncursionsCache;
+  private readonly incursionCacheFilePath: string = "incursions_cache.json";
+
+  private incursionsCache: IncursionsCache;
 
   constructor() {
     this.incursionsCache = {
@@ -11,7 +13,7 @@ class IncursionsCacheService {
       currentIncursions: [],
     };
 
-    fs.readFile("incursions_cache.json", "utf8", (err, data) => {
+    fs.readFile(this.incursionCacheFilePath, "utf8", (err, data) => {
       if (err) {
         console.log(err);
       } else {
@@ -32,7 +34,7 @@ class IncursionsCacheService {
     this.incursionsCache.currentIncursions = incursionsCacheEntry;
 
     fs.writeFile(
-      "incursions_cache.json",
+      this.incursionCacheFilePath,
       JSON.stringify(this.incursionsCache, null, 4),
       "utf8",
       (err) => {

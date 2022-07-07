@@ -1,7 +1,7 @@
 import regionIcons from "../config/region_icons.json";
 
 class RegionIconService {
-  regionIconsDict: { [regionId: number]: string };
+  private readonly regionIconsDict: { [regionId: number]: string };
 
   constructor() {
     this.regionIconsDict = regionIcons;

@@ -1,14 +1,10 @@
-import { Client, Intents, Message, TextChannel } from "discord.js";
-import { EmbedBuilder } from "@discordjs/builders";
+import { Client, Intents, TextChannel } from "discord.js";
 import { channelId, token } from "./config/config.json";
 import BotController from "./controllers/BotController";
-import EmbedMessageMapper from "./mappers/EmbedMessageMapper";
-import IncursionsCacheEntry from "./models/bot/IncursionsCacheEntry";
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 let botController: BotController;
-const embedMessageMapper: EmbedMessageMapper = new EmbedMessageMapper();
 
 client.once("ready", () => {
   console.log("Ready!");
@@ -24,30 +20,7 @@ client.on("interactionCreate", async (interaction) => {
   const { commandName } = interaction;
 
   if (commandName === "incursions") {
-    const loadingEmbed = new EmbedBuilder().setDescription(
-      "Retrieving incursions informations..."
-    ).data;
-    await interaction.reply({ embeds: [loadingEmbed] });
-    const incursionInfos: IncursionsCacheEntry[] | null =
-      await botController.incursions();
-
-    const promiseList: Promise<Message>[] = [];
-
-    if (incursionInfos != null) {
-      incursionInfos.forEach((incursionInfo) => {
-        const embedMessage =
-          embedMessageMapper.incursionInfoToEmbedMessage(incursionInfo);
-
-        if (interaction.channel != null) {
-          promiseList.push(
-            interaction.channel.send({ embeds: [embedMessage] })
-          );
-        }
-      });
-    }
-
-    await Promise.all(promiseList);
-    await interaction.deleteReply();
+    await botController.commandIncursions(interaction);
   }
 });
 

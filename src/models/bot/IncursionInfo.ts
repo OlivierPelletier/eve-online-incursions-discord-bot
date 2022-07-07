@@ -9,6 +9,7 @@ interface IncursionInfo {
   influence: number;
   state: string;
   numberOfJumpsFromLastIncursion: string;
+  lastIncursionSystemName: string;
   regionIconUrl: string;
   isIslandConstellation: string;
 }

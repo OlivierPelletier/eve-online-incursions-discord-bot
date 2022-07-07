@@ -8,23 +8,25 @@ import ESIRegion from "../models/esi/ESIRegion";
 import ESIUniverseIdsResponse from "../models/esi/ESIUniverseIdsResponse";
 
 class ESIService {
-  esiUniverseIdsUrl: string = "https://esi.evetech.net/latest/universe/ids";
+  private readonly esiUniverseIdsUrl: string =
+    "https://esi.evetech.net/latest/universe/ids";
 
-  esiIncursionsUrl: string = "https://esi.evetech.net/latest/incursions";
+  private readonly esiIncursionsUrl: string =
+    "https://esi.evetech.net/latest/incursions";
 
-  esiUniverseSystemsUrl: string =
+  private readonly esiUniverseSystemsUrl: string =
     "https://esi.evetech.net/latest/universe/systems";
 
-  esiUniverseConstellationsUrl: string =
+  private readonly esiUniverseConstellationsUrl: string =
     "https://esi.evetech.net/latest/universe/constellations";
 
-  esiUniverseRegionsUrl: string =
+  private readonly esiUniverseRegionsUrl: string =
     "https://esi.evetech.net/latest/universe/regions";
 
-  esiUniverseStationsUrl: string =
+  private readonly esiUniverseStationsUrl: string =
     "https://esi.evetech.net/latest/universe/stations";
 
-  esiRouteUrl: string = "https://esi.evetech.net/latest/route";
+  private readonly esiRouteUrl: string = "https://esi.evetech.net/latest/route";
 
   async findCharacterId(name: string): Promise<ESIIdResponse | null> {
     try {

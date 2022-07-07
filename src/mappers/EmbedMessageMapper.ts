@@ -47,7 +47,9 @@ class EmbedMessageMapper {
           name: "Incursion information:",
           value: `**Distance from last incursion:** ${
             incursionInfo.numberOfJumpsFromLastIncursion
-          } jumps\n**Influence level:** ${Math.round(
+          } jumps from ${
+            incursionInfo.lastIncursionSystemName
+          }\n**Influence level:** ${Math.round(
             incursionInfo.influence * 100
           )}%\n**Island constellation:** ${
             incursionInfo.isIslandConstellation
