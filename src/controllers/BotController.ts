@@ -47,12 +47,22 @@ class BotController {
       await this.incursions();
 
     if (incursionInfos != null) {
-      this.incursionsCacheService.saveCurrentIncursions(incursionInfos);
+      incursionInfos.forEach((incursionInfo, index) => {
+        const cachedIncursionInfo =
+          this.incursionsCacheService.findCurrentIncursionByConstellationId(
+            incursionInfo.incursionInfo.constellationId
+          );
+
+        if (cachedIncursionInfo != null) {
+          incursionInfos[index].timestamp = cachedIncursionInfo.timestamp;
+          incursionInfos[index].messageId = cachedIncursionInfo.messageId;
+        }
+      });
     }
 
     const promiseList: Promise<Message>[] = [];
 
-    if (incursionInfos != null) {
+    if (incursionInfos != null && incursionInfos.length > 0) {
       incursionInfos.forEach((incursionInfo) => {
         const embedMessage =
           this.embedMessageMapper.incursionInfoToEmbedMessage(incursionInfo);
@@ -63,9 +73,21 @@ class BotController {
           );
         }
       });
+    } else {
+      const embedMessage = this.embedMessageMapper.noIncursionToEmbedMessage();
+      if (interaction.channel != null) {
+        promiseList.push(interaction.channel.send({ embeds: [embedMessage] }));
+      }
     }
 
     await Promise.all(promiseList);
+
+    if (incursionInfos != null) {
+      this.incursionsCacheService.checkAndRotateCurrentIncursions(
+        incursionInfos
+      );
+    }
+
     await interaction.deleteReply();
   }
 
@@ -81,17 +103,17 @@ class BotController {
     const incursionInfos: IncursionInfo[] | null =
       await this.incursionsInfoService.findAllIncursionsInfo(lastIncursionInfo);
 
-    // this.incursionsCacheService.saveCurrentIncursions(currentIncursionsCache);
-
     const incursionCacheEntries: IncursionsCacheEntry[] = [];
 
-    incursionInfos?.forEach((incursionInfo) => {
-      incursionCacheEntries.push({
-        timestamp: new Date().getDate(),
-        messageId: "",
-        incursionInfo,
+    if (incursionInfos != null) {
+      incursionInfos.forEach((incursionInfo) => {
+        incursionCacheEntries.push({
+          timestamp: Date.now(),
+          messageId: "",
+          incursionInfo,
+        });
       });
-    });
+    }
 
     return incursionCacheEntries;
   }

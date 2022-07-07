@@ -9,10 +9,31 @@ class EmbedMessageMapper {
 
   redColor: number = 0xb11500;
 
+  purpleColor: number = 0x5d0085;
+
+  noIncursionToEmbedMessage(): MessageEmbed {
+    return new MessageEmbed()
+      .setAuthor({
+        name: `No incursion`,
+        url: `https://eve-incursions.de/`,
+        iconURL: ``,
+      })
+      .setTitle(`Sansha's Nation is currently fighting outside of high-sec`)
+      .setDescription(`Actively looking for a new spawn.`)
+      .setColor(this.purpleColor)
+      .addFields([
+        {
+          name: "Next spawn window in starts in",
+          value: `8 hours`,
+          inline: true,
+        },
+      ]);
+  }
+
   incursionInfoToEmbedMessage(
     incursionsCacheEntry: IncursionsCacheEntry
   ): MessageEmbed {
-    let color: number = 0x5d0085;
+    let color: number = this.purpleColor;
 
     const { incursionInfo, timestamp } = incursionsCacheEntry;
 
@@ -28,8 +49,7 @@ class EmbedMessageMapper {
       color = this.redColor;
     }
 
-    const date = new Date();
-    date.setUTCMinutes(timestamp);
+    const date = new Date(timestamp);
 
     return new MessageEmbed()
       .setAuthor({
@@ -40,7 +60,17 @@ class EmbedMessageMapper {
       .setTitle(
         `**${incursionInfo.constellationName} is now in ${incursionInfo.state} state**`
       )
-      .setDescription(`Detected on ${date.toISOString()}`)
+      .setDescription(
+        `Detected on ${date.getFullYear()}-${date
+          .getMonth()
+          .toLocaleString("en-US", { minimumIntegerDigits: 2 })}-${date
+          .getDay()
+          .toLocaleString("en-US", { minimumIntegerDigits: 2 })} at ${date
+          .getUTCHours()
+          .toLocaleString("en-US", { minimumIntegerDigits: 2 })}:${date
+          .getUTCMinutes()
+          .toLocaleString("en-US", { minimumIntegerDigits: 2 })} EVE Time`
+      )
       .setColor(color)
       .addFields([
         {
