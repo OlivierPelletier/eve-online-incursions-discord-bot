@@ -185,9 +185,7 @@ class IncursionInfoService {
             }
           }
 
-          if (lastIncursionInfo.lastIncursionSystemName != null) {
-            lastIncursionSystemName = lastIncursionInfo.headquarterSystem;
-          }
+          lastIncursionSystemName = lastIncursionInfo.headquarterSystem;
         }
       }
 
