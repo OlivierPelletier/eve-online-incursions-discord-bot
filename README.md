@@ -75,8 +75,7 @@ Also, don't forget to generate a token for your bot and put it in the config fil
   "guildId": "DISCORD_SERVER_ID",
   "channelId": "DISCORD_CHANNEL_ID",
   "token": "APP_BOT_TOKEN",
-  "highSecOnly": true,
-  "refreshRateInSecond": 300
+  "highSecOnly": true
 }
 ```
 
