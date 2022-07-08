@@ -8,7 +8,6 @@ import IncursionsCacheEntry from "../models/bot/IncursionsCacheEntry";
 import IncursionsCacheService from "../services/IncursionsCacheService";
 import IncursionInfoService from "../services/IncursionInfoService";
 import EmbedMessageMapper from "../mappers/EmbedMessageMapper";
-import { refreshRateInSecond } from "../config/config.json";
 
 class BotController {
   private readonly channel: TextChannel;
@@ -25,7 +24,7 @@ class BotController {
 
   private readonly incursionsInfoService: IncursionInfoService;
 
-  private incursionLoopId: NodeJS.Timer | undefined;
+  private incursionLoopId: NodeJS.Timeout | undefined;
 
   constructor(_channel: TextChannel) {
     this.channel = _channel;
@@ -39,17 +38,36 @@ class BotController {
       this.regionIconService,
       this.incursionLayoutService
     );
-    this.startIncursionLoop();
+    this.startIncursionLoop(1000);
   }
 
-  private startIncursionLoop() {
-    this.incursionLoopId = setInterval(async () => {
-      await this.loopIncursions();
-    }, refreshRateInSecond * 1000);
+  private startIncursionLoop(nextRefreshInMs: number) {
+    this.incursionLoopId = setTimeout(
+      async () => {
+        let nextRefreshMs = 10000;
+        try {
+          await this.loopIncursions();
+          const now = Date.now();
+          const expiresAt = this.incursionsInfoService
+            .getEsiIncursionCacheExpireDate()
+            .getTime();
+          nextRefreshMs = expiresAt - now;
+          console.log(
+            `Next incursions refresh in ${nextRefreshMs / 1000} seconds`
+          );
+        } catch (err) {
+          console.error(
+            "An error occured while executing the incursion info loop. Retrying in 10 seconds..."
+          );
+        }
+        this.startIncursionLoop(nextRefreshMs);
+      },
+      nextRefreshInMs < 1000 ? 1000 : nextRefreshInMs
+    );
   }
 
   private stopIncursionLoop() {
-    clearInterval(this.incursionLoopId);
+    clearTimeout(this.incursionLoopId);
   }
 
   async loopIncursions() {

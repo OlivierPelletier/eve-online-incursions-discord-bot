@@ -7,6 +7,7 @@ import IncursionInfo from "../models/bot/IncursionInfo";
 import ESIIncursion from "../models/esi/ESIIncursion";
 import RegionIconService from "./RegionIconService";
 import IncursionLayoutService from "./IncursionLayoutService";
+import ESIResponse from "../models/esi/ESIResponse";
 
 class IncursionInfoService {
   private readonly esiService: ESIService;
@@ -23,6 +24,8 @@ class IncursionInfoService {
     [constellationId: number]: ESIConstellation;
   };
 
+  private esiIncursionCacheExpireDate: Date;
+
   constructor(
     _esiService: ESIService,
     _regionIconService: RegionIconService,
@@ -34,17 +37,22 @@ class IncursionInfoService {
     this.esiSystemInfoByIdDict = {};
     this.esiSystemInfoByNameDict = {};
     this.esiConstellationInfoDict = {};
+    this.esiIncursionCacheExpireDate = new Date();
   }
 
   async findAllIncursionsInfo(
     lastIncursionInfo: IncursionInfo | null
   ): Promise<IncursionInfo[] | null> {
-    const esiIncursionInfos: ESIIncursion[] | null =
+    const esiResponse: ESIResponse<ESIIncursion[]> | null =
       await this.esiService.getIncursionsInfo();
 
-    if (esiIncursionInfos == null) {
+    if (esiResponse == null) {
+      this.esiIncursionCacheExpireDate = new Date(Date.now() + 30 * 60 * 1000);
       return null;
     }
+
+    const esiIncursionInfos: ESIIncursion[] = esiResponse.data;
+    this.esiIncursionCacheExpireDate = new Date(esiResponse.headers.expires);
 
     await this.prepareIncursionsData(esiIncursionInfos);
 
@@ -66,6 +74,10 @@ class IncursionInfoService {
     await Promise.all(promiseList);
 
     return incursionInfos;
+  }
+
+  getEsiIncursionCacheExpireDate(): Date {
+    return this.esiIncursionCacheExpireDate;
   }
 
   async prepareIncursionsData(esiIncursionInfos: ESIIncursion[]) {

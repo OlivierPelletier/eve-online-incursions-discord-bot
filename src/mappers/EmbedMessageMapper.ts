@@ -16,9 +16,9 @@ class EmbedMessageMapper {
     lastIncursion: IncursionsCacheEntry | null
   ): MessageEmbed {
     let spawnWindowField: EmbedFieldData;
+    const now = new Date();
 
     if (lastIncursion != null) {
-      const now: Date = new Date();
       const nextWindowDate = lastIncursion.updatedAt + 12 * 60 * 60 * 1000;
       const milliUntilNextWindow = nextWindowDate - now.getTime();
 
@@ -49,13 +49,25 @@ class EmbedMessageMapper {
       .setTitle(`Sansha's Nation is currently fighting outside of high-sec`)
       .setDescription(`Actively looking for a new spawn.`)
       .setColor(this.purpleColor)
-      .addFields([spawnWindowField]);
+      .addFields([spawnWindowField])
+      .setFooter({
+        text: `Message updated on ${now.getFullYear()}-${now
+          .getMonth()
+          .toLocaleString("en-US", { minimumIntegerDigits: 2 })}-${now
+          .getDay()
+          .toLocaleString("en-US", { minimumIntegerDigits: 2 })} at ${now
+          .getUTCHours()
+          .toLocaleString("en-US", { minimumIntegerDigits: 2 })}:${now
+          .getUTCMinutes()
+          .toLocaleString("en-US", { minimumIntegerDigits: 2 })} EVE Time`,
+      });
   }
 
   incursionInfoToEmbedMessage(
     incursionsCacheEntry: IncursionsCacheEntry
   ): MessageEmbed {
     let color: number = this.purpleColor;
+    const now = new Date();
 
     const { incursionInfo, createdAt } = incursionsCacheEntry;
 
@@ -119,7 +131,18 @@ class EmbedMessageMapper {
           )}\n**Assaults:** ${incursionInfo.assaultSystems.join(", ")}`,
           inline: true,
         },
-      ]);
+      ])
+      .setFooter({
+        text: `Message updated on ${now.getFullYear()}-${now
+          .getMonth()
+          .toLocaleString("en-US", { minimumIntegerDigits: 2 })}-${now
+          .getDay()
+          .toLocaleString("en-US", { minimumIntegerDigits: 2 })} at ${now
+          .getUTCHours()
+          .toLocaleString("en-US", { minimumIntegerDigits: 2 })}:${now
+          .getUTCMinutes()
+          .toLocaleString("en-US", { minimumIntegerDigits: 2 })} EVE Time`,
+      });
   }
 }
 

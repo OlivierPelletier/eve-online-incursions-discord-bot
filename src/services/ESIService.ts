@@ -6,6 +6,8 @@ import ESIConstellation from "../models/esi/ESIConstellation";
 import ESIStation from "../models/esi/ESIStation";
 import ESIRegion from "../models/esi/ESIRegion";
 import ESIUniverseIdsResponse from "../models/esi/ESIUniverseIdsResponse";
+import ESIHeaders from "../models/esi/ESIHeaders";
+import ESIResponse from "../models/esi/ESIResponse";
 
 class ESIService {
   private readonly esiUniverseIdsUrl: string =
@@ -69,10 +71,22 @@ class ESIService {
     }
   }
 
-  async getIncursionsInfo(): Promise<ESIIncursion[] | null> {
+  async getIncursionsInfo(): Promise<ESIResponse<ESIIncursion[]> | null> {
     try {
       const response = await axios.get(this.esiIncursionsUrl);
-      return response.data;
+      const esiIncursions: ESIIncursion[] = response.data;
+      const esiHeaders: ESIHeaders = {
+        etag: response.headers.etag,
+        expires: response.headers.expires,
+        lastModified: response.headers["last-modified"],
+        xEsiErrorLimitRemain: response.headers["x-esi-error-limit-remain"],
+        xEsiErrorLimitReset: response.headers["x-esi-error-limit-reset"],
+        xEsiRequestId: response.headers["x-esi-request-id"],
+      };
+      return {
+        data: esiIncursions,
+        headers: esiHeaders,
+      };
     } catch (error) {
       console.error(error);
       return null;
