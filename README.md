@@ -8,6 +8,16 @@ An EVE Online Discord bot for incursions enthousiast.
 
 New features for this bot are mainly motivated by ISK/PLEX donation. If you want to sponsor a new feature for this bot, DM me on discord @Opet#1246.
 
+## Bot features
+
+### Slash commands
+
+- /incursions (shows current incursion information )
+
+### Other
+
+- The bot will scan regularly the ESI for incursions update and will post the update inside a dedicated Discord channel.
+
 ## Installation
 
 ### Requirements
@@ -24,13 +34,13 @@ Tested with Docker Desktop 4.9.1. Older version might work.
 - Read **docker-compose.yml** and edit some part if needed.
 - Run the docker-compose command inside the folder of the **docker-compose.yml** file.
 
-#### docker-compose up (detached mode)
+#### docker-compose up
 
 ```
-docker-compose -p eve-online-incursion-bot up -d
+docker compose -p eve-online-incursion-bot up
 ```
 
-Remove "-d" to run in attached mode.
+Add "-d" to run in detached mode.
 
 ## Development setup
 
@@ -88,15 +98,18 @@ yarn run deploy
 yarn run bot
 ```
 
-## Bot features
+## Docker
 
-### Slash commands
+### Build Docker image
 
-- /incursions (shows current incursion information )
+#### Standard build
 
-## TODOs
+```
+docker build . -t opetdev/eve-online-incursion-discord-bot:1.0.0
+```
 
-- Automatically send new incursion information to the Discord channel
-- Add missing information to the embed message (number of jump of last incursion, timestamp)
-- Create a Docker image for the project
-- Write installation instructions
+#### Multi-arch build
+
+```
+docker buildx build . -t opetdev/eve-online-incursion-discord-bot:1.0.0 --push --platform=linux/arm64,linux/amd64
+```
