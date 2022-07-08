@@ -101,11 +101,14 @@ class BotController {
             this.channel.messages
               .fetch(incursionInfo.messageId)
               .then(async (message) => {
-                await message.edit({ embeds: [embedMessage] });
+                await message.edit({ content: null, embeds: [embedMessage] });
               })
               .catch(async () => {
                 await this.channel
-                  .send({ embeds: [embedMessage] })
+                  .send({
+                    content: `@everyone New spawn detected in ${incursionInfo.incursionInfo.constellationName}!`,
+                    embeds: [embedMessage],
+                  })
                   .then((message) => {
                     incursionInfos[incursionInfoIndex].messageId = message.id;
                   });

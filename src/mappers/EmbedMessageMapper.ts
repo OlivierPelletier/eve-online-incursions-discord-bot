@@ -4,9 +4,9 @@ import IncursionsCacheEntry from "../models/bot/IncursionsCacheEntry";
 import { noIncursionIconUrl } from "../config/icon_urls.json";
 
 class EmbedMessageMapper {
-  private readonly yellowColor: number = 0x00b129;
+  private readonly greenColor: number = 0x00b129;
 
-  private readonly greenColor: number = 0xff8000;
+  private readonly yellowColor: number = 0xff8000;
 
   private readonly redColor: number = 0xb11500;
 
@@ -66,17 +66,17 @@ class EmbedMessageMapper {
   incursionInfoToEmbedMessage(
     incursionsCacheEntry: IncursionsCacheEntry
   ): MessageEmbed {
-    let color: number = this.purpleColor;
     const now = new Date();
+    let color: number = this.purpleColor;
 
     const { incursionInfo, createdAt } = incursionsCacheEntry;
 
     if (incursionInfo.state === ESIIncursionState.ESTABLISHED.toString()) {
-      color = this.yellowColor;
+      color = this.greenColor;
     } else if (
       incursionInfo.state === ESIIncursionState.MOBILIZING.toString()
     ) {
-      color = this.greenColor;
+      color = this.yellowColor;
     } else if (
       incursionInfo.state === ESIIncursionState.WITHDRAWING.toString()
     ) {
@@ -92,7 +92,7 @@ class EmbedMessageMapper {
         iconURL: `${incursionInfo.regionIconUrl}`,
       })
       .setTitle(
-        `**${incursionInfo.constellationName} is now in ${incursionInfo.state} state**`
+        `${incursionInfo.constellationName} is now in ${incursionInfo.state} state`
       )
       .setDescription(
         `Detected on ${date.getFullYear()}-${date

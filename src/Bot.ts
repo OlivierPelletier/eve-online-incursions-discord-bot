@@ -2,7 +2,10 @@ import { Client, Intents, TextChannel } from "discord.js";
 import { channelId, token } from "./config/config.json";
 import BotController from "./controllers/BotController";
 
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const client = new Client({
+  intents: [Intents.FLAGS.GUILDS],
+  allowedMentions: { parse: ["everyone"] },
+});
 
 let botController: BotController;
 
