@@ -24,6 +24,8 @@ class BotController {
 
   private readonly incursionsInfoService: IncursionInfoService;
 
+  private incursionLoopId: NodeJS.Timer | undefined;
+
   constructor(_channel: TextChannel) {
     this.channel = _channel;
     this.embedMessageMapper = new EmbedMessageMapper();
@@ -36,6 +38,104 @@ class BotController {
       this.regionIconService,
       this.incursionLayoutService
     );
+    this.startIncursionLoop();
+  }
+
+  private startIncursionLoop() {
+    this.incursionLoopId = setInterval(async () => {
+      await this.loopIncursions();
+    }, 5 * 60 * 1000);
+  }
+
+  private stopIncursionLoop() {
+    clearInterval(this.incursionLoopId);
+  }
+
+  async loopIncursions() {
+    const incursionInfos: IncursionsCacheEntry[] | null =
+      await this.incursions();
+
+    if (incursionInfos != null) {
+      incursionInfos.forEach((incursionInfo, index) => {
+        const cachedIncursionInfo =
+          this.incursionsCacheService.findCurrentIncursionByConstellationId(
+            incursionInfo.incursionInfo.constellationId
+          );
+
+        if (cachedIncursionInfo != null) {
+          incursionInfos[index].createdAt = cachedIncursionInfo.createdAt;
+          incursionInfos[index].messageId = cachedIncursionInfo.messageId;
+        }
+      });
+    }
+
+    const promiseList: Promise<Message | void>[] = [];
+
+    if (incursionInfos != null && incursionInfos.length > 0) {
+      this.incursionsCacheService.clearNoIncursionMessageId();
+      incursionInfos.forEach((incursionInfo, incursionInfoIndex) => {
+        const embedMessage =
+          this.embedMessageMapper.incursionInfoToEmbedMessage(incursionInfo);
+
+        if (this.channel != null) {
+          promiseList.push(
+            this.channel.messages
+              .fetch(incursionInfo.messageId)
+              .then(async (message) => {
+                await message.edit({ embeds: [embedMessage] });
+              })
+              .catch(async () => {
+                await this.channel
+                  .send({ embeds: [embedMessage] })
+                  .then((message) => {
+                    incursionInfos[incursionInfoIndex].messageId = message.id;
+                  });
+              })
+          );
+        }
+      });
+    } else {
+      const embedMessage = this.embedMessageMapper.noIncursionToEmbedMessage(
+        this.incursionsCacheService.findLastIncursion()
+      );
+      if (this.channel != null) {
+        const noIncursionMessageId =
+          this.incursionsCacheService.findNoIncursionMessageId();
+
+        if (noIncursionMessageId != null) {
+          promiseList.push(
+            this.channel.messages
+              .fetch(noIncursionMessageId)
+              .then(async (message) => {
+                await message.edit({ embeds: [embedMessage] });
+              })
+              .catch(async () => {
+                await this.channel
+                  .send({ embeds: [embedMessage] })
+                  .then((message) => {
+                    this.incursionsCacheService.saveNoIncursionMessageId(
+                      message.id
+                    );
+                  });
+              })
+          );
+        } else {
+          promiseList.push(
+            this.channel.send({ embeds: [embedMessage] }).then((message) => {
+              this.incursionsCacheService.saveNoIncursionMessageId(message.id);
+            })
+          );
+        }
+      }
+    }
+
+    await Promise.all(promiseList);
+
+    if (incursionInfos != null) {
+      this.incursionsCacheService.checkAndRotateCurrentIncursions(
+        incursionInfos
+      );
+    }
   }
 
   async commandIncursions(interaction: CommandInteraction) {

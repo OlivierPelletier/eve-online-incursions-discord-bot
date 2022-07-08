@@ -9,6 +9,7 @@ class IncursionsCacheService {
 
   constructor() {
     this.incursionsCache = {
+      noIncursionMessageId: null,
       lastIncursion: null,
       currentIncursions: [],
     };
@@ -24,6 +25,10 @@ class IncursionsCacheService {
         }
       }
     });
+  }
+
+  findNoIncursionMessageId(): string | null {
+    return this.incursionsCache.noIncursionMessageId;
   }
 
   findLastIncursion(): IncursionsCacheEntry | null {
@@ -117,6 +122,16 @@ class IncursionsCacheService {
     }
 
     this.replaceAndUpdateCurrentIncursions(newCurrentIncursions);
+  }
+
+  clearNoIncursionMessageId() {
+    this.incursionsCache.noIncursionMessageId = null;
+    this.saveCacheToFile();
+  }
+
+  saveNoIncursionMessageId(noIncursionMessageId: string) {
+    this.incursionsCache.noIncursionMessageId = noIncursionMessageId;
+    this.saveCacheToFile();
   }
 
   private saveCurrentIncursions(incursionsCacheEntry: IncursionsCacheEntry[]) {

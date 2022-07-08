@@ -4,13 +4,13 @@ import IncursionsCacheEntry from "../models/bot/IncursionsCacheEntry";
 import { noIncursionIconUrl } from "../config/icon_urls.json";
 
 class EmbedMessageMapper {
-  yellowColor: number = 0x00b129;
+  private readonly yellowColor: number = 0x00b129;
 
-  greenColor: number = 0xff8000;
+  private readonly greenColor: number = 0xff8000;
 
-  redColor: number = 0xb11500;
+  private readonly redColor: number = 0xb11500;
 
-  purpleColor: number = 0x5d0085;
+  private readonly purpleColor: number = 0x5d0085;
 
   noIncursionToEmbedMessage(
     lastIncursion: IncursionsCacheEntry | null
