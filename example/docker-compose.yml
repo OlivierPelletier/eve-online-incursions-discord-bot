@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  incursion-bot:
+    image: opetdev/eve-online-incursion-discord-bot:1.0.0
+    restart: unless-stopped
+    volumes:
+      - ./config.json:/app/src/config/config.json
+      - ./incursions_cache.json:/app/incursions_cache.json # optional. useful if you don't want to lose the cache on deleting the container

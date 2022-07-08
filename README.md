@@ -8,6 +8,30 @@ An EVE Online Discord bot for incursions enthousiast.
 
 New features for this bot are mainly motivated by ISK/PLEX donation. If you want to sponsor a new feature for this bot, DM me on discord @Opet#1246.
 
+## Installation
+
+### Requirements
+
+- Docker (20.10.X)
+- docker-compose (1.29.X)
+
+Tested with Docker Desktop 4.9.1. Older version might work.
+
+### (Option 1) docker-compose
+
+- Make a copy of the content of the folder **example** somewhere on your machine.
+- Open **config.json** and complete the missing information. Read [Configure the bot](#Configure-the-bot) section.
+- Read **docker-compose.yml** and edit some part if needed.
+- Run the docker-compose command inside the folder of the **docker-compose.yml** file.
+
+#### docker-compose up (detached mode)
+
+```
+docker-compose -p eve-online-incursion-bot up -d
+```
+
+Remove "-d" to run in attached mode.
+
 ## Development setup
 
 ### Requirements
@@ -41,7 +65,8 @@ Also, don't forget to generate a token for your bot and put it in the config fil
   "guildId": "DISCORD_SERVER_ID",
   "channelId": "DISCORD_CHANNEL_ID",
   "token": "APP_BOT_TOKEN",
-  "highSecOnly": true
+  "highSecOnly": true,
+  "refreshRateInSecond": 300
 }
 ```
 

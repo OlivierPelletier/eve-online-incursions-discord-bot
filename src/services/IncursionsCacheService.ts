@@ -1,11 +1,11 @@
-import fs from "fs";
+import { writeFileSync, readFileSync } from "fs";
 import IncursionsCacheEntry from "../models/bot/IncursionsCacheEntry";
 import IncursionsCache from "../models/bot/IncursionsCache";
 
 class IncursionsCacheService {
   private readonly incursionCacheFilePath: string = "incursions_cache.json";
 
-  private incursionsCache: IncursionsCache;
+  private readonly incursionsCache: IncursionsCache;
 
   constructor() {
     this.incursionsCache = {
@@ -14,17 +14,12 @@ class IncursionsCacheService {
       currentIncursions: [],
     };
 
-    fs.readFile(this.incursionCacheFilePath, "utf8", (err, data) => {
-      if (err) {
-        console.log(err);
-      } else {
-        try {
-          this.incursionsCache = JSON.parse(data);
-        } catch (ex) {
-          console.error(ex);
-        }
-      }
-    });
+    try {
+      const data = readFileSync(this.incursionCacheFilePath, "utf8");
+      this.incursionsCache = JSON.parse(data);
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   findNoIncursionMessageId(): string | null {
@@ -146,7 +141,7 @@ class IncursionsCacheService {
 
   private saveCacheToFile() {
     try {
-      fs.writeFileSync(
+      writeFileSync(
         this.incursionCacheFilePath,
         JSON.stringify(this.incursionsCache, null, 4),
         "utf8"

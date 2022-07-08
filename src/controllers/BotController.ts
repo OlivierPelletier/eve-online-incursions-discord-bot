@@ -8,6 +8,7 @@ import IncursionsCacheEntry from "../models/bot/IncursionsCacheEntry";
 import IncursionsCacheService from "../services/IncursionsCacheService";
 import IncursionInfoService from "../services/IncursionInfoService";
 import EmbedMessageMapper from "../mappers/EmbedMessageMapper";
+import { refreshRateInSecond } from "../config/config.json";
 
 class BotController {
   private readonly channel: TextChannel;
@@ -44,7 +45,7 @@ class BotController {
   private startIncursionLoop() {
     this.incursionLoopId = setInterval(async () => {
       await this.loopIncursions();
-    }, 5 * 60 * 1000);
+    }, refreshRateInSecond * 1000);
   }
 
   private stopIncursionLoop() {

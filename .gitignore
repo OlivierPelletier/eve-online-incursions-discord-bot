@@ -3,3 +3,4 @@ node_modules
 src/config/config.json
 .idea
 incursions_cache.json
+!example/incursions_cache.json

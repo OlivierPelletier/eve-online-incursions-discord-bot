@@ -1,0 +1,8 @@
+node_modules
+.idea
+.husky
+.github
+src/config/config.json
+incursions_cache.json
+example/
+.git

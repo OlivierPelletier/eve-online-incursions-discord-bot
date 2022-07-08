@@ -1,0 +1,8 @@
+{
+  "clientId": "DISCORD_APP_OAUTH_CLIENT_ID",
+  "token": "DISCORD_APP_BOT_TOKEN",
+  "guildId": "DISCORD_SERVER_ID",
+  "channelId": "DISCORD_SERVER_CHANNEL_ID",
+  "highSecOnly": true,
+  "refreshRateInSecond": 300
+}
