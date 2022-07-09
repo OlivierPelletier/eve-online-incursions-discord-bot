@@ -74,24 +74,16 @@ class BotController {
     const incursionInfos: IncursionsCacheEntry[] | null =
       await this.incursions();
 
-    if (incursionInfos != null) {
-      incursionInfos.forEach((incursionInfo, index) => {
-        const cachedIncursionInfo =
-          this.incursionsCacheService.findCurrentIncursionByConstellationId(
-            incursionInfo.incursionInfo.constellationId
-          );
-
-        if (cachedIncursionInfo != null) {
-          incursionInfos[index].createdAt = cachedIncursionInfo.createdAt;
-          incursionInfos[index].messageId = cachedIncursionInfo.messageId;
-        }
-      });
+    if (incursionInfos == null) {
+      return;
     }
 
     const promiseList: Promise<Message | void>[] = [];
 
-    if (incursionInfos != null && incursionInfos.length > 0) {
+    if (incursionInfos.length > 0) {
       this.incursionsCacheService.clearNoIncursionMessageId();
+      this.updateCurrentIncursionInfosWithCache(incursionInfos);
+
       incursionInfos.forEach((incursionInfo, incursionInfoIndex) => {
         const embedMessage =
           this.embedMessageMapper.incursionInfoToEmbedMessage(incursionInfo);
@@ -116,7 +108,7 @@ class BotController {
           );
         }
       });
-    } else {
+    } else if (incursionInfos.length === 0) {
       const embedMessage = this.embedMessageMapper.noIncursionToEmbedMessage(
         this.incursionsCacheService.findLastIncursion()
       );
@@ -153,11 +145,7 @@ class BotController {
 
     await Promise.all(promiseList);
 
-    if (incursionInfos != null) {
-      this.incursionsCacheService.checkAndRotateCurrentIncursions(
-        incursionInfos
-      );
-    }
+    this.incursionsCacheService.checkAndRotateCurrentIncursions(incursionInfos);
   }
 
   async commandIncursions(interaction: CommandInteraction) {
@@ -168,23 +156,11 @@ class BotController {
     const incursionInfos: IncursionsCacheEntry[] | null =
       await this.incursions();
 
-    if (incursionInfos != null) {
-      incursionInfos.forEach((incursionInfo, index) => {
-        const cachedIncursionInfo =
-          this.incursionsCacheService.findCurrentIncursionByConstellationId(
-            incursionInfo.incursionInfo.constellationId
-          );
-
-        if (cachedIncursionInfo != null) {
-          incursionInfos[index].createdAt = cachedIncursionInfo.createdAt;
-          incursionInfos[index].messageId = cachedIncursionInfo.messageId;
-        }
-      });
-    }
-
     const promiseList: Promise<Message>[] = [];
 
     if (incursionInfos != null && incursionInfos.length > 0) {
+      this.updateCurrentIncursionInfosWithCache(incursionInfos);
+
       incursionInfos.forEach((incursionInfo) => {
         const embedMessage =
           this.embedMessageMapper.incursionInfoToEmbedMessage(incursionInfo);
@@ -215,6 +191,26 @@ class BotController {
     await interaction.deleteReply();
   }
 
+  private updateCurrentIncursionInfosWithCache(
+    incursionInfos: IncursionsCacheEntry[]
+  ) {
+    const incursionsInfoToBeModified = incursionInfos;
+
+    incursionsInfoToBeModified.forEach((incursionInfo, index) => {
+      const cachedIncursionInfo =
+        this.incursionsCacheService.findCurrentIncursionByConstellationId(
+          incursionInfo.incursionInfo.constellationId
+        );
+
+      if (cachedIncursionInfo != null) {
+        incursionsInfoToBeModified[index].createdAt =
+          cachedIncursionInfo.createdAt;
+        incursionsInfoToBeModified[index].messageId =
+          cachedIncursionInfo.messageId;
+      }
+    });
+  }
+
   private async incursions(): Promise<IncursionsCacheEntry[] | null> {
     const lastIncursionCache: IncursionsCacheEntry | null =
       this.incursionsCacheService.findLastIncursion();
@@ -227,18 +223,20 @@ class BotController {
     const incursionInfos: IncursionInfo[] | null =
       await this.incursionsInfoService.findAllIncursionsInfo(lastIncursionInfo);
 
+    if (incursionInfos == null) {
+      return null;
+    }
+
     const incursionCacheEntries: IncursionsCacheEntry[] = [];
 
-    if (incursionInfos != null) {
-      incursionInfos.forEach((incursionInfo) => {
-        incursionCacheEntries.push({
-          createdAt: Date.now(),
-          updatedAt: Date.now(),
-          messageId: "",
-          incursionInfo,
-        });
+    incursionInfos.forEach((incursionInfo) => {
+      incursionCacheEntries.push({
+        createdAt: Date.now(),
+        updatedAt: Date.now(),
+        messageId: "",
+        incursionInfo,
       });
-    }
+    });
 
     return incursionCacheEntries;
   }
