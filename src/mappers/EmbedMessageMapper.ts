@@ -78,6 +78,11 @@ class EmbedMessageMapper {
     }
 
     const createAtDate = new Date(createdAt);
+    let lastIncursionDistanceMessage = "N/A";
+
+    if (incursionInfo.numberOfJumpsFromLastIncursion !== "N/A") {
+      lastIncursionDistanceMessage = `${incursionInfo.numberOfJumpsFromLastIncursion} jumps from ${incursionInfo.lastIncursionSystemName}`;
+    }
 
     return new MessageEmbed()
       .setAuthor({
@@ -95,11 +100,7 @@ class EmbedMessageMapper {
       .addFields([
         {
           name: "Incursion information:",
-          value: `**Distance from last incursion:** ${
-            incursionInfo.numberOfJumpsFromLastIncursion
-          } jumps from ${
-            incursionInfo.lastIncursionSystemName
-          }\n**Influence level:** ${Math.round(
+          value: `**Distance from last incursion:** ${lastIncursionDistanceMessage}\n**Influence level:** ${Math.round(
             incursionInfo.influence * 100
           )}%\n**Island constellation:** ${
             incursionInfo.isIslandConstellation
