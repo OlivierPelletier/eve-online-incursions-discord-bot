@@ -47,7 +47,7 @@ class IncursionInfoService {
       await this.esiService.getIncursionsInfo();
 
     if (esiResponse == null) {
-      this.esiIncursionCacheExpireDate = new Date(Date.now() + 30 * 60 * 1000);
+      this.esiIncursionCacheExpireDate = new Date(Date.now() + 60 * 1000);
       return null;
     }
 
