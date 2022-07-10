@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosResponseHeaders } from "axios";
 import ESIIdResponse from "../models/esi/ESIIdResponse";
 import ESIIncursion from "../models/esi/ESIIncursion";
 import ESISystem from "../models/esi/ESISystem";
@@ -30,10 +30,15 @@ class ESIService {
 
   private readonly esiRouteUrl: string = "https://esi.evetech.net/latest/route";
 
-  async findCharacterId(name: string): Promise<ESIIdResponse | null> {
+  async findCharacterId(
+    name: string
+  ): Promise<ESIResponse<ESIIdResponse | null> | null> {
     try {
       const response = await axios.post(this.esiUniverseIdsUrl, Array.of(name));
       const esiUniversIdsResponse: ESIUniverseIdsResponse = response.data;
+      const esiHeaders: ESIHeaders = ESIService.axiosHeadersToESIHeaders(
+        response.headers
+      );
       let esiCharacterId: ESIIdResponse | null = null;
 
       if (
@@ -44,27 +49,32 @@ class ESIService {
           esiUniversIdsResponse.characters.pop() as ESIIdResponse;
       }
 
-      return esiCharacterId;
+      return { data: esiCharacterId, headers: esiHeaders };
     } catch (error) {
       console.error(error);
       return null;
     }
   }
 
-  async findSystemId(name: string): Promise<ESIIdResponse | null> {
+  async findSystemId(
+    name: string
+  ): Promise<ESIResponse<ESIIdResponse | null> | null> {
     try {
       const response = await axios.post(this.esiUniverseIdsUrl, Array.of(name));
       const esiUniversIdsResponse: ESIUniverseIdsResponse = response.data;
-      let esiCharacterId: ESIIdResponse | null = null;
+      const esiHeaders: ESIHeaders = ESIService.axiosHeadersToESIHeaders(
+        response.headers
+      );
+      let esiSystemId: ESIIdResponse | null = null;
 
       if (
-        esiUniversIdsResponse.characters !== undefined &&
-        esiUniversIdsResponse.characters.length > 0
+        esiUniversIdsResponse.systems !== undefined &&
+        esiUniversIdsResponse.systems.length > 0
       ) {
-        esiCharacterId = esiUniversIdsResponse.systems.pop() as ESIIdResponse;
+        esiSystemId = esiUniversIdsResponse.systems.pop() as ESIIdResponse;
       }
 
-      return esiCharacterId;
+      return { data: esiSystemId, headers: esiHeaders };
     } catch (error) {
       console.error(error);
       return null;
@@ -75,14 +85,10 @@ class ESIService {
     try {
       const response = await axios.get(this.esiIncursionsUrl);
       const esiIncursions: ESIIncursion[] = response.data;
-      const esiHeaders: ESIHeaders = {
-        etag: response.headers.etag,
-        expires: response.headers.expires,
-        lastModified: response.headers["last-modified"],
-        xEsiErrorLimitRemain: response.headers["x-esi-error-limit-remain"],
-        xEsiErrorLimitReset: response.headers["x-esi-error-limit-reset"],
-        xEsiRequestId: response.headers["x-esi-request-id"],
-      };
+      const esiHeaders: ESIHeaders = ESIService.axiosHeadersToESIHeaders(
+        response.headers
+      );
+
       return {
         data: esiIncursions,
         headers: esiHeaders,
@@ -93,12 +99,18 @@ class ESIService {
     }
   }
 
-  async getSystemInfo(systemId: number): Promise<ESISystem | null> {
+  async getSystemInfo(
+    systemId: number
+  ): Promise<ESIResponse<ESISystem> | null> {
     try {
       const response = await axios.get(
         `${this.esiUniverseSystemsUrl}/${systemId}`
       );
-      return response.data;
+      const esiHeaders: ESIHeaders = ESIService.axiosHeadersToESIHeaders(
+        response.headers
+      );
+
+      return { data: response.data, headers: esiHeaders };
     } catch (error) {
       console.error(error);
       return null;
@@ -107,36 +119,52 @@ class ESIService {
 
   async getConstellationInfo(
     constellationId: number
-  ): Promise<ESIConstellation | null> {
+  ): Promise<ESIResponse<ESIConstellation> | null> {
     try {
       const response = await axios.get(
         `${this.esiUniverseConstellationsUrl}/${constellationId}`
       );
-      return response.data;
+      const esiHeaders: ESIHeaders = ESIService.axiosHeadersToESIHeaders(
+        response.headers
+      );
+
+      return { data: response.data, headers: esiHeaders };
     } catch (error) {
       console.error(error);
       return null;
     }
   }
 
-  async getRegionInfo(regionId: number): Promise<ESIRegion | null> {
+  async getRegionInfo(
+    regionId: number
+  ): Promise<ESIResponse<ESIRegion> | null> {
     try {
       const response = await axios.get(
         `${this.esiUniverseRegionsUrl}/${regionId}`
       );
-      return response.data;
+      const esiHeaders: ESIHeaders = ESIService.axiosHeadersToESIHeaders(
+        response.headers
+      );
+
+      return { data: response.data, headers: esiHeaders };
     } catch (error) {
       console.error(error);
       return null;
     }
   }
 
-  async getStationInfo(stationId: number): Promise<ESIStation | null> {
+  async getStationInfo(
+    stationId: number
+  ): Promise<ESIResponse<ESIStation> | null> {
     try {
       const response = await axios.get(
         `${this.esiUniverseStationsUrl}/${stationId}`
       );
-      return response.data;
+      const esiHeaders: ESIHeaders = ESIService.axiosHeadersToESIHeaders(
+        response.headers
+      );
+
+      return { data: response.data, headers: esiHeaders };
     } catch (error) {
       console.error(error);
       return null;
@@ -146,16 +174,36 @@ class ESIService {
   async getRouteInfo(
     originSystemId: number,
     destinationSystemId: number
-  ): Promise<number[] | null> {
+  ): Promise<ESIResponse<number[]> | null> {
     try {
       const response = await axios.get(
         `${this.esiRouteUrl}/${originSystemId}/${destinationSystemId}?flag=secure`
       );
-      return response.data;
+      const esiHeaders: ESIHeaders = ESIService.axiosHeadersToESIHeaders(
+        response.headers
+      );
+
+      return {
+        data: response.data,
+        headers: esiHeaders,
+      };
     } catch (error) {
       console.error(error);
       return null;
     }
+  }
+
+  private static axiosHeadersToESIHeaders(
+    headers: AxiosResponseHeaders
+  ): ESIHeaders {
+    return {
+      etag: headers.etag,
+      expires: headers.expires,
+      lastModified: headers["last-modified"],
+      xEsiErrorLimitRemain: headers["x-esi-error-limit-remain"],
+      xEsiErrorLimitReset: headers["x-esi-error-limit-reset"],
+      xEsiRequestId: headers["x-esi-request-id"],
+    };
   }
 }
 

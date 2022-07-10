@@ -51,15 +51,9 @@ class EmbedMessageMapper {
       .setColor(this.purpleColor)
       .addFields([spawnWindowField])
       .setFooter({
-        text: `Message updated on ${now.getFullYear()}-${now
-          .getMonth()
-          .toLocaleString("en-US", { minimumIntegerDigits: 2 })}-${now
-          .getDay()
-          .toLocaleString("en-US", { minimumIntegerDigits: 2 })} at ${now
-          .getUTCHours()
-          .toLocaleString("en-US", { minimumIntegerDigits: 2 })}:${now
-          .getUTCMinutes()
-          .toLocaleString("en-US", { minimumIntegerDigits: 2 })} EVE Time`,
+        text: `Message updated on ${EmbedMessageMapper.dateToEveTimeString(
+          now
+        )}`,
       });
   }
 
@@ -83,7 +77,7 @@ class EmbedMessageMapper {
       color = this.redColor;
     }
 
-    const date = new Date(createdAt);
+    const createAtDate = new Date(createdAt);
 
     return new MessageEmbed()
       .setAuthor({
@@ -95,15 +89,7 @@ class EmbedMessageMapper {
         `${incursionInfo.constellationName} is now in ${incursionInfo.state} state`
       )
       .setDescription(
-        `Detected on ${date.getFullYear()}-${date
-          .getMonth()
-          .toLocaleString("en-US", { minimumIntegerDigits: 2 })}-${date
-          .getDay()
-          .toLocaleString("en-US", { minimumIntegerDigits: 2 })} at ${date
-          .getUTCHours()
-          .toLocaleString("en-US", { minimumIntegerDigits: 2 })}:${date
-          .getUTCMinutes()
-          .toLocaleString("en-US", { minimumIntegerDigits: 2 })} EVE Time`
+        `Detected on ${EmbedMessageMapper.dateToEveTimeString(createAtDate)}`
       )
       .setColor(color)
       .addFields([
@@ -133,16 +119,22 @@ class EmbedMessageMapper {
         },
       ])
       .setFooter({
-        text: `Message updated on ${now.getFullYear()}-${now
-          .getMonth()
-          .toLocaleString("en-US", { minimumIntegerDigits: 2 })}-${now
-          .getDay()
-          .toLocaleString("en-US", { minimumIntegerDigits: 2 })} at ${now
-          .getUTCHours()
-          .toLocaleString("en-US", { minimumIntegerDigits: 2 })}:${now
-          .getUTCMinutes()
-          .toLocaleString("en-US", { minimumIntegerDigits: 2 })} EVE Time`,
+        text: `Message updated on ${EmbedMessageMapper.dateToEveTimeString(
+          now
+        )}`,
       });
+  }
+
+  private static dateToEveTimeString(date: Date): string {
+    const locale: Intl.LocalesArgument = "en-US";
+    const options: Intl.NumberFormatOptions = { minimumIntegerDigits: 2 };
+    const year = date.getUTCFullYear();
+    const month = date.getUTCMonth().toLocaleString(locale, options);
+    const day = date.getUTCDate().toLocaleString(locale, options);
+    const hours = date.getUTCHours().toLocaleString(locale, options);
+    const minutes = date.getUTCMinutes().toLocaleString(locale, options);
+
+    return `${year}-${month}-${day} at ${hours}:${minutes} EVE Time`;
   }
 }
 

@@ -87,8 +87,10 @@ class IncursionInfoService {
       promiseList.push(
         this.esiService
           .getConstellationInfo(esiIncursion.constellation_id)
-          .then((esiConstellation) => {
-            if (esiConstellation != null) {
+          .then((esiResponse) => {
+            if (esiResponse != null) {
+              const esiConstellation = esiResponse.data;
+
               this.esiConstellationInfoDict[esiConstellation.constellation_id] =
                 esiConstellation;
             }
@@ -98,8 +100,10 @@ class IncursionInfoService {
       promiseList.push(
         this.esiService
           .getSystemInfo(esiIncursion.staging_solar_system_id)
-          .then((esiSystem) => {
-            if (esiSystem != null) {
+          .then((esiResponse) => {
+            if (esiResponse != null) {
+              const esiSystem = esiResponse.data;
+
               this.esiSystemInfoByIdDict[esiSystem.system_id] = esiSystem;
               this.esiSystemInfoByNameDict[esiSystem.name] = esiSystem;
             }
@@ -110,8 +114,10 @@ class IncursionInfoService {
         promiseList.push(
           this.esiService
             .getSystemInfo(infestedSolarSystem)
-            .then((esiSystem) => {
-              if (esiSystem != null) {
+            .then((esiResponse) => {
+              if (esiResponse != null) {
+                const esiSystem = esiResponse.data;
+
                 this.esiSystemInfoByIdDict[esiSystem.system_id] = esiSystem;
                 this.esiSystemInfoByNameDict[esiSystem.name] = esiSystem;
               }
@@ -187,12 +193,14 @@ class IncursionInfoService {
 
         if (lastIncursionInfo != null) {
           if (lastIncursionInfo.headquarterSystemId != null) {
-            const route = await this.esiService.getRouteInfo(
+            const esiResponse = await this.esiService.getRouteInfo(
               lastIncursionInfo.headquarterSystemId,
               headquarterSystemId
             );
 
-            if (route != null) {
+            if (esiResponse != null) {
+              const route = esiResponse.data;
+
               numberOfJumpsFromLastIncursion = (route.length - 1).toString();
             }
           }
