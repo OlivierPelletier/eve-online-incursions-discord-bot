@@ -12,11 +12,11 @@ New features for this bot are mainly motivated by ISK/PLEX donation. If you want
 
 ### Slash commands
 
-- /incursions (shows current incursion information )
+- _/incursions_ (shows current incursion information)
 
-### Other
+### Background processes
 
-- The bot will scan regularly the ESI for incursions update and will post the update inside a dedicated Discord channel.
+- Scans regularly the ESI for incursions update and posts updates inside a dedicated Discord channel.
 
 ## Installation
 
@@ -29,18 +29,28 @@ Tested with Docker Desktop 4.9.1. Older version might work.
 
 ### (Option 1) docker-compose
 
-- Make a copy of the content of the folder **example** somewhere on your machine.
-- Open **config.json** and complete the missing information. Read [Configure the bot](#Configure-the-bot) section.
+- Copy the content content of the folder **example/** somewhere on your machine.
+- Open **config.json** and complete the missing information. Read [Add the bot to a server](#Add-the-bot-to-a-server) section.
 - Read **docker-compose.yml** and edit some part if needed.
 - Run the docker-compose command inside the folder of the **docker-compose.yml** file.
-
-#### docker-compose up
 
 ```
 docker compose -p eve-online-incursion-bot up
 ```
 
-Add "-d" to run in detached mode.
+_Add "-d" to run in detached mode._
+
+### (Option 2) docker run
+
+- Copy the content of the folder **example/** somewhere on your machine.
+- Open **config.json** and complete the missing information. Read [Add the bot to a server](#Add-the-bot-to-a-server) section.
+- Run docker run command
+
+```
+docker run -it -v /FULLPATHTO/config.json:/app/src/config/config.json -v /FULLPATHTO/incursions_cache.json:/app/incursions_cache.json opetdev/eve-online-incursion-discord-bot:1.0.0
+```
+
+_Replace "-it" for "-d" to run in detached mode._
 
 ## Development setup
 
