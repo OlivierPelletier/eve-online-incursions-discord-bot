@@ -120,7 +120,7 @@ docker build . -t opetdev/eve-online-incursion-discord-bot:1.0.0
 #### Multi-arch build
 
 ```
-docker buildx build . -t opetdev/eve-online-incursion-discord-bot:1.0.0 --push --platform=linux/arm64,linux/amd64
+docker buildx build . -t opetdev/eve-online-incursion-discord-bot:1.0.0 --push --platform=linux/arm64,linux/amd64,linux/arm/v7,linux/arm/v6
 ```
 
 ## CCP Copyright Notice
