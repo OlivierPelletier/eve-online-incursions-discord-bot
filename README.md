@@ -2,11 +2,14 @@
 
 An EVE Online Discord bot for incursions enthousiast.
 
+![Discord message](https://user-images.githubusercontent.com/9085097/178177985-ae6be01e-47f7-4334-9574-063e2bb378b2.png)
+
 ## Sponsors
 
 - Kevin "Twiggys" T.
 
-New features for this bot are mainly motivated by ISK/PLEX donation. If you want to sponsor a new feature for this bot, DM me on discord @Opet#1246.
+### Note about sponsors
+New features for this bot are mainly motivated by ISK and PLEX donations. If you want to sponsor a new feature, DM me on discord (Opet#1246).
 
 ## Bot features
 
@@ -16,7 +19,8 @@ New features for this bot are mainly motivated by ISK/PLEX donation. If you want
 
 ### Background processes
 
-- Scans regularly the ESI for incursions update and posts updates inside a dedicated Discord channel.
+- Scans regularly the ESI (~5 minutes) for current incursions informations and posts updates inside a dedicated Discord channel.
+- Caches locally informations about current and past incursions to display some enhanced data.
 
 ## Installation
 
