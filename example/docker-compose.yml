@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   incursion-bot:
-    image: opetdev/eve-online-incursion-discord-bot:1.0.0
+    image: opetdev/eve-online-incursion-discord-bot:1.0.1
     restart: unless-stopped
     volumes:
       - ./config.json:/app/src/config/config.json

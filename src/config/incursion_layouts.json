@@ -501,7 +501,7 @@
     "staging_system": "Ukkalen",
     "vanguard_systems": ["Akkilen", "Keikaken", "Onuse"],
     "assault_systems": ["Soshin", "Vattuolen"],
-    "headquarter_system": " "
+    "headquarter_system": "Silen"
   },
   "Outartoh": {
     "is_island_constellation": false,
