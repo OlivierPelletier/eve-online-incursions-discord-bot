@@ -9,6 +9,7 @@ An EVE Online Discord bot for incursions enthousiast.
 - Kevin "Twiggys" T.
 
 ### Note about sponsors
+
 New features for this bot are mainly motivated by ISK and PLEX donations. If you want to sponsor a new feature, DM me on discord (Opet#1246).
 
 ## Bot features
@@ -129,4 +130,4 @@ docker buildx build . -t opetdev/eve-online-incursion-discord-bot:1.0.1 --push -
 
 ## CCP Copyright Notice
 
-EVE Online, the EVE logo, EVE and all associated logos and designs are the intellectual property of CCP hf. All artwork, screenshots, characters, vehicles, storylines, world facts or other recognizable features of the intellectual property relating to these trademarks are likewise the intellectual property of CCP hf. EVE Online and the EVE logo are the registered trademarks of CCP hf. All rights are reserved worldwide. All other trademarks are the property of their respective owners.
+EVE Online and the EVE logo are the registered trademarks of CCP hf. All rights are reserved worldwide. All other trademarks are the property of their respective owners. EVE Online, the EVE logo, EVE and all associated logos and designs are the intellectual property of CCP hf. All artwork, screenshots, characters, vehicles, storylines, world facts or other recognizable features of the intellectual property relating to these trademarks are likewise the intellectual property of CCP hf. CCP hf. has granted permission to EVE Online incursions Discord bot to use EVE Online and all associated logos and designs for promotional and information purposes on its website but does not endorse, and is not in any way affiliated with, EVE Online incursions Discord bot. CCP is in no way responsible for the content on or functioning of this website, nor can it be liable for any damage arising from the use of this website.
