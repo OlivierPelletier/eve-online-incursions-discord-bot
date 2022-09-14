@@ -158,7 +158,7 @@ class IncursionInfoService {
       );
     } else if (
       !highSecOnly ||
-      (highSecOnly && stagingSolarSystemInfo.security_status >= 0.5)
+      (highSecOnly && stagingSolarSystemInfo.security_status >= 0.45)
     ) {
       let regionIconUrl = this.regionIconService.findRegionIconUrl(
         constellationInfo.region_id

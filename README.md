@@ -52,7 +52,7 @@ _Add "-d" to run in detached mode._
 - Run docker run command
 
 ```
-docker run -it -v /FULLPATHTO/config.json:/app/src/config/config.json -v /FULLPATHTO/incursions_cache.json:/app/incursions_cache.json opetdev/eve-online-incursion-discord-bot:1.0.1
+docker run -it -v /FULLPATHTO/config.json:/app/src/config/config.json -v /FULLPATHTO/incursions_cache.json:/app/incursions_cache.json opetdev/eve-online-incursion-discord-bot:1.0.2
 ```
 
 _Replace "-it" for "-d" to run in detached mode._
@@ -119,13 +119,13 @@ yarn run bot
 #### Standard build
 
 ```
-docker build . -t opetdev/eve-online-incursion-discord-bot:1.0.1
+docker build . -t opetdev/eve-online-incursion-discord-bot:1.0.2
 ```
 
 #### Multi-arch build
 
 ```
-docker buildx build . -t opetdev/eve-online-incursion-discord-bot:1.0.1 --push --platform=linux/arm64,linux/amd64,linux/arm/v7,linux/arm/v6
+docker buildx build . -t opetdev/eve-online-incursion-discord-bot:1.0.2 --push --platform=linux/arm64,linux/amd64,linux/arm/v7,linux/arm/v6
 ```
 
 ## CCP Copyright Notice
