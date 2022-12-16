@@ -1,4 +1,4 @@
-# EVE Online incursions Discord bot
+# [EVE Online incursions Discord bot](https://github.com/OlivierPelletier/eve-online-incursions-discord-bot)
 
 An EVE Online Discord bot for incursions enthousiast.
 
