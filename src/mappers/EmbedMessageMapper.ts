@@ -2,6 +2,7 @@ import { EmbedFieldData, MessageEmbed } from "discord.js";
 import ESIIncursionState from "../models/esi/ESIIncursionState";
 import IncursionsCacheEntry from "../models/bot/IncursionsCacheEntry";
 import { noIncursionIconUrl } from "../config/icon_urls.json";
+import { timeZone } from "../config/config.json";
 
 class EmbedMessageMapper {
   private readonly greenColor: number = 0x00b129;
@@ -53,6 +54,8 @@ class EmbedMessageMapper {
       .setFooter({
         text: `Message updated on ${EmbedMessageMapper.dateToEveTimeString(
           now
+        )} ${EmbedMessageMapper.dateToMskTimeString(
+            now
         )}`,
       });
   }
@@ -94,7 +97,7 @@ class EmbedMessageMapper {
         `${incursionInfo.constellationName} is now in ${incursionInfo.state} state`
       )
       .setDescription(
-        `Detected on ${EmbedMessageMapper.dateToEveTimeString(createAtDate)}`
+        `Detected on ${EmbedMessageMapper.dateToEveTimeString(createAtDate)} ${EmbedMessageMapper.dateToMskTimeString(createAtDate)}`
       )
       .setColor(color)
       .addFields([
@@ -122,6 +125,8 @@ class EmbedMessageMapper {
       .setFooter({
         text: `Message updated on ${EmbedMessageMapper.dateToEveTimeString(
           now
+        )} ${EmbedMessageMapper.dateToMskTimeString(
+            now
         )}`,
       });
   }
@@ -137,6 +142,16 @@ class EmbedMessageMapper {
 
     return `${year}-${month}-${day} at ${hours}:${minutes} EVE Time`;
   }
+
+  private static dateToMskTimeString(date: Date): string {
+    date.setTime( date.getTime() + timeZone * 60 * 60 * 1000 );
+    const locale: Intl.LocalesArgument = "en-US";
+    const options: Intl.NumberFormatOptions = { minimumIntegerDigits: 2 };
+    const hours = date.getUTCHours().toLocaleString(locale, options);
+    const minutes = date.getUTCMinutes().toLocaleString(locale, options);
+    return `(${hours}:${minutes} MSK)`;
+  }
+
 }
 
 export default EmbedMessageMapper;
