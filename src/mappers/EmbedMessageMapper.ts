@@ -91,7 +91,7 @@ class EmbedMessageMapper {
       .setAuthor({
         name: `${incursionInfo.constellationName}`,
         url: `https://eve-incursions.de/`,
-        iconURL: `${incursionInfo.regionIconUrl}`,
+        iconURL: noIncursionIconUrl,
       })
       .setTitle(
         `${incursionInfo.constellationName} is now in ${incursionInfo.state} state`
@@ -99,6 +99,7 @@ class EmbedMessageMapper {
       .setDescription(
         `Detected on ${EmbedMessageMapper.dateToEveTimeString(createAtDate)} ${EmbedMessageMapper.dateToMskTimeString(createAtDate)}`
       )
+      .setThumbnail(`${incursionInfo.regionIconUrl}`)
       .setColor(color)
       .addFields([
         {
