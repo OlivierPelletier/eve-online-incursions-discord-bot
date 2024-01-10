@@ -1,2162 +1,2237 @@
 {
-  "Agiesseson": {
-    "is_island_constellation": false,
-    "staging_system": "Claysson",
-    "vanguard_systems": [
-      "Adiere",
-      "Oirtlair",
-      "Olelon",
-      "Stetille"
-    ],
-    "assault_systems": [
-      "Auberulle",
-      "Doussivitte"
-    ],
-    "headquarter_system": "Unel"
-  },
-  "Ahrnot": {
-    "is_island_constellation": false,
-    "staging_system": "Kasi",
-    "vanguard_systems": [
-      "Hilmar",
-      "Jeshideh",
-      "Shura"
-    ],
-    "assault_systems": [
-      "Yooh"
-    ],
-    "headquarter_system": "Hostakoh"
-  },
-  "Ajah": {
-    "is_island_constellation": false,
-    "staging_system": "Sizamod",
-    "vanguard_systems": [
-      "Assiad",
-      "Iswa",
-      "Rand",
-      "Rumida"
-    ],
-    "assault_systems": [
-      "Kerepa",
-      "Marthia",
-      "Nosodis"
-    ],
-    "headquarter_system": "Safilbab"
-  },
-  "Algintal": {
-    "is_island_constellation": false,
-    "staging_system": "Barmalie",
-    "vanguard_systems": [
-      "Audaene",
-      "Augnais",
-      "Fluekele",
-      "Jolia"
-    ],
-    "assault_systems": [
-      "Alsottobier",
-      "Deltole",
-      "Parchanier"
-    ],
-    "headquarter_system": "Colelie"
-  },
-  "Amdimmah": {
-    "is_island_constellation": false,
-    "staging_system": "Moniyyuku",
-    "vanguard_systems": [
-      "Palas",
-      "Reteka",
-      "Safshela"
-    ],
-    "assault_systems": [
-      "Gidali"
-    ],
-    "headquarter_system": "Molea"
-  },
-  "Ancbeu": {
-    "is_island_constellation": false,
-    "staging_system": "Chesiette",
-    "vanguard_systems": [
-      "Annelle",
-      "Claulenne",
-      "Masalle"
-    ],
-    "assault_systems": [
-      "Sortet"
-    ],
-    "headquarter_system": "Scolluzer"
-  },
-  "Ankard": {
-    "is_island_constellation": false,
-    "staging_system": "Vilur",
-    "vanguard_systems": [
-      "Altrinur",
-      "Eygfe",
-      "Reset"
-    ],
-    "assault_systems": [
-      "Fildar",
-      "Olbra"
-    ],
-    "headquarter_system": "Jondik"
-  },
-  "Aokinen": {
-    "is_island_constellation": false,
-    "staging_system": "Astoh",
-    "vanguard_systems": [
-      "Onnamon",
-      "Tsuruma",
-      "Uuhulanen"
-    ],
-    "assault_systems": [
-      "Rohamaa",
-      "Samanuni"
-    ],
-    "headquarter_system": "Uchomida"
-  },
-  "Aptetter": {
-    "is_island_constellation": false,
-    "staging_system": "Libold",
-    "vanguard_systems": [
-      "Aldrat",
-      "Erstur",
-      "Urnhard"
-    ],
-    "assault_systems": [
-      "Fredagod"
-    ],
-    "headquarter_system": "Hardbako"
-  },
-  "Araz": {
-    "is_island_constellation": false,
-    "staging_system": "Koona",
-    "vanguard_systems": [
-      "Jakri",
-      "Munory",
-      "Nidupad",
-      "Zimse"
-    ],
-    "assault_systems": [
-      "Aphi",
-      "Garisas"
-    ],
-    "headquarter_system": "Chanoun"
-  },
-  "Arekin": {
-    "is_island_constellation": false,
-    "staging_system": "Kaimon",
-    "vanguard_systems": [
-      "Alikara",
-      "Kausaaja",
-      "Oiniken"
-    ],
-    "assault_systems": [
-      "Aikoro"
-    ],
-    "headquarter_system": "Ahynada"
-  },
-  "Argeir": {
-    "is_island_constellation": false,
-    "staging_system": "Klaevik",
-    "vanguard_systems": [
-      "Atonder",
-      "Hotrardik",
-      "Ridoner"
-    ],
-    "assault_systems": [
-      "Engosi"
-    ],
-    "headquarter_system": "Orduin"
-  },
-  "Asalola": {
-    "is_island_constellation": false,
-    "staging_system": "Torrinos",
-    "vanguard_systems": [
-      "Ibura",
-      "Isinokka",
-      "Yoma"
-    ],
-    "assault_systems": [
-      "Oipo"
-    ],
-    "headquarter_system": "Haajinen"
-  },
-  "Avib": {
-    "is_island_constellation": false,
-    "staging_system": "Adia",
-    "vanguard_systems": [
-      "Azizora",
-      "Hadonoo",
-      "Shabura"
-    ],
-    "assault_systems": [
-      "Jarshitsan"
-    ],
-    "headquarter_system": "Ahmak"
-  },
-  "Brazinget": {
-    "is_island_constellation": false,
-    "staging_system": "Lumegen",
-    "vanguard_systems": [
-      "Gedugaud",
-      "Oppold",
-      "Tratokard"
-    ],
-    "assault_systems": [
-      "Geffur"
-    ],
-    "headquarter_system": "Hilfhurmur"
-  },
-  "Caldari Border Zone": {
-    "is_island_constellation": false,
-    "staging_system": "Sivala",
-    "vanguard_systems": [
-      "Hatakani",
-      "Iivinen",
-      "Tennen"
-    ],
-    "assault_systems": [
-      "Yashunen"
-    ],
-    "headquarter_system": "Kassigainen"
-  },
-  "Charak": {
-    "is_island_constellation": false,
-    "staging_system": "Abhan",
-    "vanguard_systems": [
-      "Anyed",
-      "Chiga",
-      "Habu"
-    ],
-    "assault_systems": [
-      "Anzalaisio"
-    ],
-    "headquarter_system": "Asanot"
-  },
-  "Chardu": {
-    "is_island_constellation": false,
-    "staging_system": "Lahnina",
-    "vanguard_systems": [
-      "Etav",
-      "Pedel",
-      "Saheri"
-    ],
-    "assault_systems": [
-      "Anila",
-      "Yeeramoun"
-    ],
-    "headquarter_system": "Ides"
-  },
-  "Damadil": {
-    "is_island_constellation": false,
-    "staging_system": "Perdan",
-    "vanguard_systems": [
-      "Kibursha",
-      "Hostni",
-      "Mimime"
-    ],
-    "assault_systems": [
-      "Onazel",
-      "Asesamy"
-    ],
-    "headquarter_system": "Lossa"
-  },
-  "Daredan": {
-    "is_island_constellation": false,
-    "staging_system": "Akes",
-    "vanguard_systems": [
-      "Hati",
-      "Riavayed",
-      "Uadelah"
-    ],
-    "assault_systems": [
-      "Hakshma",
-      "Laddiaha"
-    ],
-    "headquarter_system": "Nakatre"
-  },
-  "Elalan": {
-    "is_island_constellation": false,
-    "staging_system": "Aydoteaux",
-    "vanguard_systems": [
-      "Averon",
-      "Carirgnottin",
-      "Muer",
-      "Odixie",
-      "Scuelazyns",
-      "Tolle"
-    ],
-    "assault_systems": [
-      "Angymonne",
-      "Antollare",
-      "Enedore",
-      "Laic"
-    ],
-    "headquarter_system": "Avele"
-  },
-  "Enka": {
-    "is_island_constellation": true,
-    "staging_system": "Palpis",
-    "vanguard_systems": [
-      "Arveyil",
-      "Nidebora",
-      "Ulerah",
-      "Uktiad"
-    ],
-    "assault_systems": [
-      "Faktun",
-      "Halenan"
-    ],
-    "headquarter_system": "Mili"
-  },
-  "Erada": {
-    "is_island_constellation": false,
-    "staging_system": "Loguttur",
-    "vanguard_systems": [
-      "Krilmokenur",
-      "Magiko",
-      "Onga",
-      "Vullat"
-    ],
-    "assault_systems": [
-      "Larkugei",
-      "Oremmulf",
-      "Osaumuni"
-    ],
-    "headquarter_system": "Hurjafren"
-  },
-  "Eustron": {
-    "is_island_constellation": false,
-    "staging_system": "Andole",
-    "vanguard_systems": [
-      "Cat",
-      "Derririntel",
-      "Ommaret"
-    ],
-    "assault_systems": [
-      "Atlangeins"
-    ],
-    "headquarter_system": "Hecarrin"
-  },
-  "Fabas": {
-    "is_island_constellation": false,
-    "staging_system": "Heorah",
-    "vanguard_systems": [
-      "Agal",
-      "Doza",
-      "Ebasez"
-    ],
-    "assault_systems": [
-      "Bania",
-      "Nasreri"
-    ],
-    "headquarter_system": "Girani-Fa"
-  },
-  "Febihkin": {
-    "is_island_constellation": false,
-    "staging_system": "Dantan",
-    "vanguard_systems": [
-      "Kador Prime",
-      "Khafis",
-      "Nordar"
-    ],
-    "assault_systems": [
-      "Askonak",
-      "Murini"
-    ],
-    "headquarter_system": "Uanim"
-  },
-  "Fekhoya": {
-    "is_island_constellation": false,
-    "staging_system": "Balanaz",
-    "vanguard_systems": [
-      "Afnakat",
-      "Bashyam",
-      "Parsesr"
-    ],
-    "assault_systems": [
-      "Firbha"
-    ],
-    "headquarter_system": "Col"
-  },
-  "Finaka": {
-    "is_island_constellation": false,
-    "staging_system": "Geztic",
-    "vanguard_systems": [
-      "Hishai",
-      "Osis",
-      "Sehsasez",
-      "Yezara"
-    ],
-    "assault_systems": [
-      "Ervekam",
-      "Kahah",
-      "Mashtarmem"
-    ],
-    "headquarter_system": "Saloti"
-  },
-  "Frar": {
-    "is_island_constellation": false,
-    "staging_system": "Aderkan",
-    "vanguard_systems": [
-      "Earled",
-      "Ogoten",
-      "Tollus"
-    ],
-    "assault_systems": [
-      "Hebisa",
-      "Polstodur"
-    ],
-    "headquarter_system": "Ansher"
-  },
-  "Gedur": {
-    "is_island_constellation": false,
-    "staging_system": "Abrat",
-    "vanguard_systems": [
-      "Alf",
-      "Arlulf",
-      "Brundakur",
-      "Illuin"
-    ],
-    "assault_systems": [
-      "Aldilur",
-      "Orgron",
-      "Nedegulf"
-    ],
-    "headquarter_system": "Stirht"
-  },
-  "Goins": {
-    "is_island_constellation": true,
-    "staging_system": "Stoure",
-    "vanguard_systems": [
-      "Arasare",
-      "Lazer",
-      "Yvelet"
-    ],
-    "assault_systems": [
-      "Vecodie"
-    ],
-    "headquarter_system": "Yvaeroure"
-  },
-  "Haurala": {
-    "is_island_constellation": false,
-    "staging_system": "Kino",
-    "vanguard_systems": [
-      "Erenta",
-      "Ouranienen",
-      "Uemisaisen"
-    ],
-    "assault_systems": [
-      "Sotrentaira"
-    ],
-    "headquarter_system": "Raussinen"
-  },
-  "Hoosa": {
-    "is_island_constellation": false,
-    "staging_system": "Horir",
-    "vanguard_systems": [
-      "Abaim",
-      "Somouh",
-      "Sorzielang"
-    ],
-    "assault_systems": [
-      "Sayartchen",
-      "Teshi"
-    ],
-    "headquarter_system": "Gosalav"
-  },
-  "Ichida": {
-    "is_island_constellation": false,
-    "staging_system": "Malpara",
-    "vanguard_systems": [
-      "Hakodan",
-      "Hatori",
-      "Ronne"
-    ],
-    "assault_systems": [
-      "Jarkkolen"
-    ],
-    "headquarter_system": "Junsen"
-  },
-  "Ihilakken": {
-    "is_island_constellation": false,
-    "staging_system": "Sakenta",
-    "vanguard_systems": [
-      "Ansila",
-      "Aokannitoh",
-      "Hirtamon",
-      "Ikuchi"
-    ],
-    "assault_systems": [
-      "Hykkota",
-      "Ohmahailen",
-      "Outuni"
-    ],
-    "headquarter_system": "Eskunen"
-  },
-  "Jonar": {
-    "is_island_constellation": false,
-    "staging_system": "Anbald",
-    "vanguard_systems": [
-      "Bongveber",
-      "Freatlidur",
-      "Maturat"
-    ],
-    "assault_systems": [
-      "Roleinn",
-      "Vorsk"
-    ],
-    "headquarter_system": "Eiluvodi"
-  },
-  "Jonenor": {
-    "is_island_constellation": false,
-    "staging_system": "Gallareue",
-    "vanguard_systems": [
-      "Ansone",
-      "Dunraelare",
-      "Nausschie",
-      "Trosquesere"
-    ],
-    "assault_systems": [
-      "Estene",
-      "Stayme"
-    ],
-    "headquarter_system": "Inghenges"
-  },
-  "Kainokai": {
-    "is_island_constellation": false,
-    "staging_system": "Ajanen",
-    "vanguard_systems": [
-      "Autama",
-      "Kuoka",
-      "Tsukuras"
-    ],
-    "assault_systems": [
-      "Kirras"
-    ],
-    "headquarter_system": "Nani"
-  },
-  "Kakol": {
-    "is_island_constellation": false,
-    "staging_system": "Neburab",
-    "vanguard_systems": [
-      "Aband",
-      "Ghesis",
-      "Gonan"
-    ],
-    "assault_systems": [
-      "Gamdis",
-      "Joamma"
-    ],
-    "headquarter_system": "Joramok"
-  },
-  "Kalangin": {
-    "is_island_constellation": false,
-    "staging_system": "Lachailes",
-    "vanguard_systems": [
-      "Eshtah",
-      "Kasrasi",
-      "Ordize",
-      "Rashy"
-    ],
-    "assault_systems": [
-      "Fovihi",
-      "Psasa"
-    ],
-    "headquarter_system": "Kiereend"
-  },
-  "Kekah": {
-    "is_island_constellation": false,
-    "staging_system": "Harva",
-    "vanguard_systems": [
-      "Aghesi",
-      "Charra",
-      "Patzcha"
-    ],
-    "assault_systems": [
-      "Airshaz"
-    ],
-    "headquarter_system": "Fabin"
-  },
-  "Kehina": {
-    "is_island_constellation": false,
-    "staging_system": "Nalu",
-    "vanguard_systems": [
-      "Esteban",
-      "Luromooh",
-      "Sahdil"
-    ],
-    "assault_systems": [
-      "Nadohman"
-    ],
-    "headquarter_system": "Moussou"
-  },
-  "Kiartanne": {
-    "is_island_constellation": false,
-    "staging_system": "Theruesse",
-    "vanguard_systems": [
-      "Ansalle",
-      "Ellmay",
-      "Gisleres"
-    ],
-    "assault_systems": [
-      "Amygnon",
-      "Jufvitte"
-    ],
-    "headquarter_system": "Scheenins"
-  },
-  "Kisana": {
-    "is_island_constellation": false,
-    "staging_system": "Eredan",
-    "vanguard_systems": [
-      "Gheth",
-      "Lisudeh",
-      "Mehatoor"
-    ],
-    "assault_systems": [
-      "Sasoutikh"
-    ],
-    "headquarter_system": "Ohide"
-  },
-  "Lorundio": {
-    "is_island_constellation": false,
-    "staging_system": "Asgeir",
-    "vanguard_systems": [
-      "Evuldgenzo",
-      "Flost",
-      "Ongund"
-    ],
-    "assault_systems": [
-      "Eust"
-    ],
-    "headquarter_system": "Todrir"
-  },
-  "Maddam": {
-    "is_island_constellation": false,
-    "staging_system": "Chesoh",
-    "vanguard_systems": [
-      "Hama",
-      "Hanan",
-      "Irnal",
-      "Sarum Prime"
-    ],
-    "assault_systems": [
-      "Alkabsi",
-      "Bagodan",
-      "Mahrokht"
-    ],
-    "headquarter_system": "Murzi"
-  },
-  "Maseend": {
-    "is_island_constellation": false,
-    "staging_system": "Ana",
-    "vanguard_systems": [
-      "Hamse",
-      "Jaswelu",
-      "Lashkai",
-      "Zhilshinou"
-    ],
-    "assault_systems": [
-      "Maiah",
-      "Yuhelia"
-    ],
-    "headquarter_system": "Barira"
-  },
-  "Mayonhen": {
-    "is_island_constellation": true,
-    "staging_system": "Mishi",
-    "vanguard_systems": [
-      "Avada",
-      "Haimeh",
-      "Pahineh"
-    ],
-    "assault_systems": [
-      "Bazadod"
-    ],
-    "headquarter_system": "Chibi"
-  },
-  "Mazake": {
-    "is_island_constellation": false,
-    "staging_system": "Sakhti",
-    "vanguard_systems": [
-      "Hiramu",
-      "Hutian",
-      "Mazitah",
-      "Pelkia"
-    ],
-    "assault_systems": [
-      "Joppaya",
-      "Raren"
-    ],
-    "headquarter_system": "Noli"
-  },
-  "Megeh": {
-    "is_island_constellation": false,
-    "staging_system": "Dresi",
-    "vanguard_systems": [
-      "Aharalel",
-      "Gensela",
-      "Zororzih"
-    ],
-    "assault_systems": [
-      "Aphend",
-      "Romi"
-    ],
-    "headquarter_system": "Hiroudeh"
-  },
-  "Mekashtad": {
-    "is_island_constellation": false,
-    "staging_system": "Pirohdim",
-    "vanguard_systems": [
-      "Iosantin",
-      "Janus",
-      "Orva",
-      "Salashayama",
-      "Thiarer",
-      "Zet"
-    ],
-    "assault_systems": [
-      "Amphar",
-      "Nikh",
-      "Usroh"
-    ],
-    "headquarter_system": "Agha"
-  },
-  "Mimishia": {
-    "is_island_constellation": false,
-    "staging_system": "Unkah",
-    "vanguard_systems": [
-      "Atoosh",
-      "Hoona",
-      "Mimen"
-    ],
-    "assault_systems": [
-      "Thashkarai"
-    ],
-    "headquarter_system": "Sacalan"
-  },
-  "Mobit": {
-    "is_island_constellation": false,
-    "staging_system": "Narai",
-    "vanguard_systems": [
-      "Bashakru",
-      "Shuria",
-      "Sukirah"
-    ],
-    "assault_systems": [
-      "Mikhir",
-      "Ziona"
-    ],
-    "headquarter_system": "Akhragan"
-  },
-  "Moghiz": {
-    "is_island_constellation": false,
-    "staging_system": "Yehnifi",
-    "vanguard_systems": [
-      "Kooreng",
-      "Shaggoth",
-      "Ustni"
-    ],
-    "assault_systems": [
-      "Elmed",
-      "Minin"
-    ],
-    "headquarter_system": "Jennim"
-  },
-  "Mossas": {
-    "is_island_constellation": false,
-    "staging_system": "Shala",
-    "vanguard_systems": [
-      "Ibaria",
-      "Maspah",
-      "Zemalu"
-    ],
-    "assault_systems": [
-      "Juddi"
-    ],
-    "headquarter_system": "Khankenirdia"
-  },
-  "Mulata": {
-    "is_island_constellation": false,
-    "staging_system": "Hizhara",
-    "vanguard_systems": [
-      "Ahala",
-      "Arera",
-      "Knophtikoo"
-    ],
-    "assault_systems": [
-      "Hai",
-      "Seiradih"
-    ],
-    "headquarter_system": "Mamenkhanar"
-  },
-  "Nagaslaiken": {
-    "is_island_constellation": false,
-    "staging_system": "Saikanen",
-    "vanguard_systems": [
-      "Jeras",
-      "Kakki",
-      "Oijamon"
-    ],
-    "assault_systems": [
-      "Auviken"
-    ],
-    "headquarter_system": "Ohvosamon"
-  },
-  "Naloran": {
-    "is_island_constellation": false,
-    "staging_system": "Akhmoh",
-    "vanguard_systems": [
-      "Hapala",
-      "Salah",
-      "Yebouz"
-    ],
-    "assault_systems": [
-      "Syrikos"
-    ],
-    "headquarter_system": "Hikansog"
-  },
-  "Nasorin": {
-    "is_island_constellation": false,
-    "staging_system": "Azhgabid",
-    "vanguard_systems": [
-      "Arkoz",
-      "Jinizu",
-      "Taru",
-      "Yanuel"
-    ],
-    "assault_systems": [
-      "Nafrivik",
-      "Remoriu"
-    ],
-    "headquarter_system": "Phoren"
-  },
-  "Nimedaz": {
-    "is_island_constellation": false,
-    "staging_system": "Chaktaren",
-    "vanguard_systems": [
-      "Danyana",
-      "Jinkah",
-      "Nibainkier",
-      "Polfaly"
-    ],
-    "assault_systems": [
-      "Annad",
-      "Nahyeen"
-    ],
-    "headquarter_system": "Andrub"
-  },
-  "Nohshayess": {
-    "is_island_constellation": false,
-    "staging_system": "Sazre",
-    "vanguard_systems": [
-      "Ipref",
-      "Jachanu",
-      "Khanid Prime",
-      "Kihtaled"
-    ],
-    "assault_systems": [
-      "Agil",
-      "Gousoviba",
-      "Neyi"
-    ],
-    "headquarter_system": "Bukah"
-  },
-  "Norgoh": {
-    "is_island_constellation": false,
-    "staging_system": "Fora",
-    "vanguard_systems": [
-      "Bhizheba",
-      "Eba",
-      "Safizon",
-      "Zatsyaki"
-    ],
-    "assault_systems": [
-      "Artoun",
-      "Ebtesham"
-    ],
-    "headquarter_system": "Isamm"
-  },
-  "Odengsolf": {
-    "is_island_constellation": false,
-    "staging_system": "Balginia",
-    "vanguard_systems": [
-      "Avesber",
-      "Frarn",
-      "Gyng",
-      "Illinfrik"
-    ],
-    "assault_systems": [
-      "Ivar",
-      "Meirakulf"
-    ],
-    "headquarter_system": "Usteli"
-  },
-  "Odilis": {
-    "is_island_constellation": false,
-    "staging_system": "Quier",
-    "vanguard_systems": [
-      "Frarolle",
-      "Gicodel",
-      "Mattere"
-    ],
-    "assault_systems": [
-      "Ethernity",
-      "Meves"
-    ],
-    "headquarter_system": "Athinard"
-  },
-  "Oraron": {
-    "is_island_constellation": false,
-    "staging_system": "Akeva",
-    "vanguard_systems": [
-      "Ejahi",
-      "Gelhan",
-      "Jarizza"
-    ],
-    "assault_systems": [
-      "Asghatil",
-      "Bar"
-    ],
-    "headquarter_system": "Sucha"
-  },
-  "Orshed": {
-    "is_island_constellation": false,
-    "staging_system": "Buftiar",
-    "vanguard_systems": [
-      "Jofan",
-      "Odlib",
-      "Yadi"
-    ],
-    "assault_systems": [
-      "Tidacha"
-    ],
-    "headquarter_system": "Milu"
-  },
-  "Orvanne": {
-    "is_island_constellation": true,
-    "staging_system": "Gererique",
-    "vanguard_systems": [
-      "Niballe",
-      "Odinesyn",
-      "Postouvin"
-    ],
-    "assault_systems": [
-      "Larryn"
-    ],
-    "headquarter_system": "Weraroix"
-  },
-  "Osnins": {
-    "is_island_constellation": false,
-    "staging_system": "Aice",
-    "vanguard_systems": [
-      "Amattens",
-      "Bereye",
-      "Junsoraert",
-      "Jurlesel"
-    ],
-    "assault_systems": [
-      "Arnatele",
-      "Halle"
-    ],
-    "headquarter_system": "Mormoen"
-  },
-  "Osta": {
-    "is_island_constellation": false,
-    "staging_system": "Obrolber",
-    "vanguard_systems": [
-      "Austraka",
-      "Dumkirinur",
-      "Sist"
-    ],
-    "assault_systems": [
-      "Edmalbrurdus",
-      "Kronsur"
-    ],
-    "headquarter_system": "Todeko"
-  },
-  "Otsabaira": {
-    "is_island_constellation": false,
-    "staging_system": "Ukkalen",
-    "vanguard_systems": [
-      "Akkilen",
-      "Keikaken",
-      "Onuse"
-    ],
-    "assault_systems": [
-      "Soshin",
-      "Vattuolen"
-    ],
-    "headquarter_system": "Silen"
-  },
-  "Outartoh": {
-    "is_island_constellation": false,
-    "staging_system": "Ono",
-    "vanguard_systems": [
-      "Annaro",
-      "Isutaka",
-      "Tasabeshi"
-    ],
-    "assault_systems": [
-      "Muvolailen"
-    ],
-    "headquarter_system": "Paara"
-  },
-  "Panorad": {
-    "is_island_constellation": false,
-    "staging_system": "Oraekja",
-    "vanguard_systems": [
-      "Hakeri",
-      "Irgrus",
-      "Nifflung"
-    ],
-    "assault_systems": [
-      "Josekorn"
-    ],
-    "headquarter_system": "Dantbeinn"
-  },
-  "Panoumid": {
-    "is_island_constellation": false,
-    "staging_system": "Nare",
-    "vanguard_systems": [
-      "Imih",
-      "Soumi",
-      "Zinkon"
-    ],
-    "assault_systems": [
-      "Choga"
-    ],
-    "headquarter_system": "Kulu"
-  },
-  "Parrosa": {
-    "is_island_constellation": false,
-    "staging_system": "Kamda",
-    "vanguard_systems": [
-      "Mandoo",
-      "Miah",
-      "Peyiri"
-    ],
-    "assault_systems": [
-      "Yarebap"
-    ],
-    "headquarter_system": "Finid"
-  },
-  "Peges": {
-    "is_island_constellation": false,
-    "staging_system": "Ahteer",
-    "vanguard_systems": [
-      "Hath",
-      "Judra",
-      "Sharios",
-      "Uhodoh"
-    ],
-    "assault_systems": [
-      "Esa",
-      "Kari"
-    ],
-    "headquarter_system": "Arakor"
-  },
-  "Pietanen": {
-    "is_island_constellation": true,
-    "staging_system": "Jotenen",
-    "vanguard_systems": [
-      "Atai",
-      "Otalieto",
-      "Rauntaka"
-    ],
-    "assault_systems": [
-      "Liukikka"
-    ],
-    "headquarter_system": "Aikantoh"
-  },
-  "Qermi": {
-    "is_island_constellation": false,
-    "staging_system": "Lazara",
-    "vanguard_systems": [
-      "Asrios",
-      "Ithar",
-      "Shemah"
-    ],
-    "assault_systems": [
-      "Zorrabed"
-    ],
-    "headquarter_system": "Telang"
-  },
-  "Reya": {
-    "is_island_constellation": false,
-    "staging_system": "Imya",
-    "vanguard_systems": [
-      "Gergish",
-      "Kobam",
-      "Tahli"
-    ],
-    "assault_systems": [
-      "Madomi"
-    ],
-    "headquarter_system": "Hirizan"
-  },
-  "Rifenda": {
-    "is_island_constellation": false,
-    "staging_system": "Ahkour",
-    "vanguard_systems": [
-      "Gaknem",
-      "Nehkiah",
-      "Siyi"
-    ],
-    "assault_systems": [
-      "Iro"
-    ],
-    "headquarter_system": "Abai"
-  },
-  "Ryra": {
-    "is_island_constellation": false,
-    "staging_system": "Thasinaz",
-    "vanguard_systems": [
-      "Choonka",
-      "Dihra",
-      "Dital"
-    ],
-    "assault_systems": [
-      "Esescama"
-    ],
-    "headquarter_system": "Odin"
-  },
-  "Ruomo": {
-    "is_island_constellation": false,
-    "staging_system": "Itamo",
-    "vanguard_systems": [
-      "Ahtulaima",
-      "Kylmabe",
-      "Vaankalen"
-    ],
-    "assault_systems": [
-      "Jatate",
-      "Mitsolen"
-    ],
-    "headquarter_system": "Mahtista"
-  },
-  "San Matar": {
-    "is_island_constellation": false,
-    "staging_system": "Zaid",
-    "vanguard_systems": [
-      "Akpivem",
-      "Nirbhi",
-      "Tanoo",
-      "Yuzier"
-    ],
-    "assault_systems": [
-      "Jark",
-      "Sasta"
-    ],
-    "headquarter_system": "Lashesih"
-  },
-  "Sanair": {
-    "is_island_constellation": false,
-    "staging_system": "Ahrosseas",
-    "vanguard_systems": [
-      "Adahum",
-      "Goram",
-      "Tendhyes"
-    ],
-    "assault_systems": [
-      "Tividu"
-    ],
-    "headquarter_system": "Anjedin"
-  },
-  "Santenpaa": {
-    "is_island_constellation": false,
-    "staging_system": "Motsu",
-    "vanguard_systems": [
-      "Aramachi",
-      "Komo",
-      "Laah",
-      "Oichiya"
-    ],
-    "assault_systems": [
-      "Saila",
-      "Isenairos"
-    ],
-    "headquarter_system": "Uotila"
-  },
-  "Sib": {
-    "is_island_constellation": false,
-    "staging_system": "Moro",
-    "vanguard_systems": [
-      "Ainsan",
-      "Badivefi",
-      "Talidal"
-    ],
-    "assault_systems": [
-      "Ashi",
-      "Tzashrah"
-    ],
-    "headquarter_system": "Sabusi"
-  },
-  "Somi": {
-    "is_island_constellation": false,
-    "staging_system": "Matyas",
-    "vanguard_systems": [
-      "Imeshasa",
-      "Jarzalad",
-      "Pimsu"
-    ],
-    "assault_systems": [
-      "Nafomeh"
-    ],
-    "headquarter_system": "Riramia"
-  },
-  "Sosarir": {
-    "is_island_constellation": false,
-    "staging_system": "Shumam",
-    "vanguard_systems": [
-      "Ardishapur Prime",
-      "Gid",
-      "Nererut",
-      "Nifshed",
-      "Vashkah"
-    ],
-    "assault_systems": [
-      "Rasile",
-      "Sitanan",
-      "Thebeka"
-    ],
-    "headquarter_system": "Dakba"
-  },
-  "Subhatoub": {
-    "is_island_constellation": false,
-    "staging_system": "Seitam",
-    "vanguard_systems": [
-      "Tew",
-      "Zehru",
-      "Zith"
-    ],
-    "assault_systems": [
-      "Alra",
-      "Ilas"
-    ],
-    "headquarter_system": "Sinid"
-  },
-  "Suon": {
-    "is_island_constellation": false,
-    "staging_system": "Inari",
-    "vanguard_systems": [
-      "Inaro",
-      "Irjunen",
-      "Waskisen"
-    ],
-    "assault_systems": [
-      "Sirppala"
-    ],
-    "headquarter_system": "Kaaputenen"
-  },
-  "Stadakorn": {
-    "is_island_constellation": false,
-    "staging_system": "Situner",
-    "vanguard_systems": [
-      "Agtver",
-      "Datulen",
-      "Erego",
-      "Meimungen",
-      "Totkubad"
-    ],
-    "assault_systems": [
-      "Evettullur",
-      "Hjortur",
-      "Tamekamur"
-    ],
-    "headquarter_system": "Egbonbet"
-  },
-  "Trigentia": {
-    "is_island_constellation": false,
-    "staging_system": "Akhwa",
-    "vanguard_systems": [
-      "Inis-Ilix",
-      "Sonama",
-      "Suner"
-    ],
-    "assault_systems": [
-      "Halibai",
-      "Turba"
-    ],
-    "headquarter_system": "Kothe"
-  },
-  "Tsemshatel": {
-    "is_island_constellation": false,
-    "staging_system": "Yasud",
-    "vanguard_systems": [
-      "Azerakish",
-      "Ghishul",
-      "Lari",
-      "Moutid"
-    ],
-    "assault_systems": [
-      "Asezai",
-      "Yeder"
-    ],
-    "headquarter_system": "Ferira"
-  },
-  "Unour": {
-    "is_island_constellation": true,
-    "staging_system": "Vilinnon",
-    "vanguard_systems": [
-      "Iffrue",
-      "Mollin",
-      "Ommaerrer"
-    ],
-    "assault_systems": [
-      "Ivorider"
-    ],
-    "headquarter_system": "Osmallanais"
-  },
-  "Urtfer": {
-    "is_island_constellation": false,
-    "staging_system": "Jorus",
-    "vanguard_systems": [
-      "Appen",
-      "Javrendei",
-      "Klir"
-    ],
-    "assault_systems": [
-      "Trer"
-    ],
-    "headquarter_system": "Egmur"
-  },
-  "Wyllequet": {
-    "is_island_constellation": false,
-    "staging_system": "Croleur",
-    "vanguard_systems": [
-      "Atier",
-      "Bawilan",
-      "Brapelille"
-    ],
-    "assault_systems": [
-      "Adrallezoen"
-    ],
-    "headquarter_system": "Brybier"
-  },
-  "Yestadan": {
-    "is_island_constellation": false,
-    "staging_system": "Cailanar",
-    "vanguard_systems": [
-      "Armala",
-      "Murema",
-      "Uchat"
-    ],
-    "assault_systems": [
-      "Ilonarav"
-    ],
-    "headquarter_system": "Gaha"
-  },
-  "Yekti": {
-    "is_island_constellation": false,
-    "staging_system": "Saana",
-    "vanguard_systems": [
-      "Bahromab",
-      "Kudi",
-      "Madirmilire"
-    ],
-    "assault_systems": [
-      "Fabum"
-    ],
-    "headquarter_system": "Sharji"
-  },
-  "Ysiette": {
-    "is_island_constellation": false,
-    "staging_system": "Aclan",
-    "vanguard_systems": [
-      "Jaschercis",
-      "Marosier",
-      "Vaurent"
-    ],
-    "assault_systems": [
-      "Ardallabier",
-      "Lirsautton"
-    ],
-    "headquarter_system": "Blameston"
-  },
-  "Zemont": {
-    "is_island_constellation": false,
-    "staging_system": "Zaimeth",
-    "vanguard_systems": [
-      "Ekid",
-      "Raravoss",
-      "Sharhelund"
-    ],
-    "assault_systems": [
-      "Youl"
-    ],
-    "headquarter_system": "Nakri"
-  },
-  "Aeman": {
-    "is_island_constellation": false,
-    "staging_system": "Rorsins",
-    "vanguard_systems": [
-      "Miroitem",
-      "Otou",
-      "Thelan"
-    ],
-    "assault_systems": "Lamadent",
-    "headquarter_system": "Rancer"
-  },
-  "Afinoo": {
-    "is_island_constellation": false,
-    "staging_system": "Hier",
-    "vanguard_systems": [
-      "Gens",
-      "Jasson",
-      "Kanih"
-    ],
-    "assault_systems": "Kenahehab",
-    "headquarter_system": "Yehaba"
-  },
-  "Aguh": {
-    "is_island_constellation": false,
-    "staging_system": "Hahyil",
-    "vanguard_systems": [
-      "Aranir",
-      "Eshwil",
-      "Sosa"
-    ],
-    "assault_systems": "Ilahed",
-    "headquarter_system": "Ishkad"
-  },
-  "Akar": {
-    "is_island_constellation": false,
-    "staging_system": "Baratar",
-    "vanguard_systems": [
-      "Amafi",
-      "Ashkoo",
-      "Nahrneder"
-    ],
-    "assault_systems": "Hakana",
-    "headquarter_system": "Arzieh"
-  },
-  "Aldodan": {
-    "is_island_constellation": false,
-    "staging_system": "Brin",
-    "vanguard_systems": [
-      "Evati",
-      "Todifrauan",
-      "Arnstur",
-      "Helgatild"
-    ],
-    "assault_systems": [
-      "Lasleinur",
-      "Arnher"
-    ],
-    "headquarter_system": "Ofstold"
-  },
-  "Almur": {
-    "is_island_constellation": false,
-    "staging_system": "Sakulda",
-    "vanguard_systems": [
-      "Gonheim",
-      "Half",
-      "Istodard"
-    ],
-    "assault_systems": "Altbrard",
-    "headquarter_system": "Hedaleolfarber"
-  },
-  "Alpakian": {
-    "is_island_constellation": false,
-    "staging_system": "Rafeme",
-    "vanguard_systems": [
-      "Fanathor",
-      "Nakis",
-      "Pout"
-    ],
-    "assault_systems": "Zirsem",
-    "headquarter_system": "Hezere"
-  },
-  "Alselbosier": {
-    "is_island_constellation": false,
-    "staging_system": "Pain",
-    "vanguard_systems": [
-      "Aunsou",
-      "Gare",
-      "Reynire"
-    ],
-    "assault_systems": "Cumemare",
-    "headquarter_system": "Alperaute"
-  },
-  "Amevync": {
-    "is_island_constellation": false,
-    "staging_system": "Esesier",
-    "vanguard_systems": [
-      "Aldranette",
-      "Evaulon",
-      "Anchauttes"
-    ],
-    "assault_systems": [
-      "Vlillirier",
-      "Alsavoinon"
-    ],
-    "headquarter_system": "Oicx"
-  },
-  "Anama": {
-    "is_island_constellation": false,
-    "staging_system": "Maalna",
-    "vanguard_systems": [
-      "Maseera",
-      "Shakasi",
-      "Zayi"
-    ],
-    "assault_systems": "Van",
-    "headquarter_system": "Shirshocin"
-  },
-  "Angils": {
-    "is_island_constellation": false,
-    "staging_system": "Ualkin",
-    "vanguard_systems": [
-      "Egmar",
-      "Gukarla",
-      "Taff"
-    ],
-    "assault_systems": "Orfrold",
-    "headquarter_system": "Klogori"
-  },
-  "Armi": {
-    "is_island_constellation": false,
-    "staging_system": "Arodan",
-    "vanguard_systems": [
-      "Bourar",
-      "Rammi",
-      "Rimbah"
-    ],
-    "assault_systems": "Milal",
-    "headquarter_system": "Sobenah"
-  },
-  "Aven": {
-    "is_island_constellation": false,
-    "staging_system": "Olin",
-    "vanguard_systems": [
-      "Galnafsad",
-      "Otakod",
-      "Shalne"
-    ],
-    "assault_systems": "Shapisin",
-    "headquarter_system": "Gonditsa"
-  },
-  "Braille": {
-    "is_island_constellation": false,
-    "staging_system": "Vevelonel",
-    "vanguard_systems": [
-      "Meunvon",
-      "Anckee",
-      "Elore",
-      "Yveve"
-    ],
-    "assault_systems": [
-      "Aimoguier",
-      "Conomette"
-    ],
-    "headquarter_system": "Cadelanne"
-  },
-  "Budar": {
-    "is_island_constellation": false,
-    "staging_system": "Ibani",
-    "vanguard_systems": [
-      "Irmalin",
-      "Timudan",
-      "Cabeki"
-    ],
-    "assault_systems": "Sassecho",
-    "headquarter_system": "Goudiyah"
-  },
-  "Elerelle": {
-    "is_island_constellation": false,
-    "staging_system": "Agaullores",
-    "vanguard_systems": [
-      "Babirmoult",
-      "Faurulle",
-      "Hare",
-      "Ogaria"
-    ],
-    "assault_systems": [
-      "Heluene",
-      "Oruse"
-    ],
-    "headquarter_system": "Arittant"
-  },
-  "Elfrard": {
-    "is_island_constellation": false,
-    "staging_system": "Kadlina",
-    "vanguard_systems": [
-      "Aeditide",
-      "Egbinger",
-      "Hegfunden"
-    ],
-    "assault_systems": "Weld",
-    "headquarter_system": "Klingt"
-  },
-  "Essin": {
-    "is_island_constellation": false,
-    "staging_system": "Hofjaldgund",
-    "vanguard_systems": [
-      "Ebolfer",
-      "Eszur",
-      "Gebuladi"
-    ],
-    "assault_systems": [
-      "Frerstorn",
-      "Sirekur"
-    ],
-    "headquarter_system": "Ontorn"
-  },
-  "Eugidi": {
-    "is_island_constellation": false,
-    "staging_system": "Vimeini",
-    "vanguard_systems": [
-      "Aset",
-      "Avenod",
-      "Isbrabata",
-      "Turnur"
-    ],
-    "assault_systems": [
-      "Eytjangard",
-      "Uisper"
-    ],
-    "headquarter_system": "Floseswin"
-  },
-  "EVE": {
-    "is_island_constellation": false,
-    "staging_system": "New Eden",
-    "vanguard_systems": [
-      "Canard",
-      "Central Point",
-      "Promised Land"
-    ],
-    "assault_systems": [
-      "Dead End",
-      "Gateway"
-    ],
-    "headquarter_system": "Exit"
-  },
-  "Fabai": {
-    "is_island_constellation": false,
-    "staging_system": "Sakht",
-    "vanguard_systems": [
-      "Anath",
-      "Naga",
-      "Tisot"
-    ],
-    "assault_systems": "Omigiav",
-    "headquarter_system": "Efu"
-  },
-  "Fribrodi": {
-    "is_island_constellation": false,
-    "staging_system": "Ansen",
-    "vanguard_systems": [
-      "Arifsdald",
-      "Arwa",
-      "Krirald"
-    ],
-    "assault_systems": "Hakisalki",
-    "headquarter_system": "Dudreda"
-  },
-  "Fua": {
-    "is_island_constellation": false,
-    "staging_system": "Amod",
-    "vanguard_systems": [
-      "Akila",
-      "Basan",
-      "Shajarleg"
-    ],
-    "assault_systems": "Sahda",
-    "headquarter_system": "Naguton"
-  },
-  "Ganoure": {
-    "is_island_constellation": false,
-    "staging_system": "Espigoure",
-    "vanguard_systems": [
-      "Ausmaert",
-      "Barleguet",
-      "Vestouve"
-    ],
-    "assault_systems": "Aulbres",
-    "headquarter_system": "Kenninck"
-  },
-  "Hed": {
-    "is_island_constellation": false,
-    "staging_system": "Lantorn",
-    "vanguard_systems": [
-      "Dal",
-      "Siseide",
-      "Vard"
-    ],
-    "assault_systems": "Auga",
-    "headquarter_system": "Amamake"
-  },
-  "Helab": {
-    "is_island_constellation": false,
-    "staging_system": "Sheri",
-    "vanguard_systems": [
-      "Ahraghen",
-      "Ajna",
-      "Tukanas"
-    ],
-    "assault_systems": "Nielez, Soliara",
-    "headquarter_system": "Fageras"
-  },
-  "Homroon": {
-    "is_island_constellation": false,
-    "staging_system": "Neda",
-    "vanguard_systems": [
-      "Chitiamem",
-      "Zahefeus",
-      "Zephan"
-    ],
-    "assault_systems": [
-      "Kuhri",
-      "Nandeza"
-    ],
-    "headquarter_system": "Dimoohan"
-  },
-  "Inolari": {
-    "is_island_constellation": false,
-    "staging_system": "Pavanakka",
-    "vanguard_systems": [
-      "Innia",
-      "Eha",
-      "Martoh"
-    ],
-    "assault_systems": "Kinakka",
-    "headquarter_system": "Raihbaka"
-  },
-  "Ishaga": {
-    "is_island_constellation": false,
-    "staging_system": "Hikkoken",
-    "vanguard_systems": [
-      "Immuri",
-      "Hallanen",
-      "Nemmamaila"
-    ],
-    "assault_systems": [
-      "Akidagi",
-      "Enaluri"
-    ],
-    "headquarter_system": "Aivonen"
-  },
-  "Isoma": {
-    "is_island_constellation": false,
-    "staging_system": "Tannolen",
-    "vanguard_systems": [
-      "Tama",
-      "Sujarento",
-      "Onatoh",
-      "Eranakko"
-    ],
-    "assault_systems": [
-      "Nagamanen",
-      "Oto"
-    ],
-    "headquarter_system": "Hasmijaala"
-  },
-  "Jakemhih": {
-    "is_island_constellation": false,
-    "staging_system": "Misaba",
-    "vanguard_systems": [
-      "Mamet",
-      "Ziriert",
-      "Rephirib"
-    ],
-    "assault_systems": "Biphi",
-    "headquarter_system": "Hoshoun"
-  },
-  "Jatari": {
-    "is_island_constellation": false,
-    "staging_system": "Khabara",
-    "vanguard_systems": [
-      "Fensi",
-      "Jeni",
-      "Nebian"
-    ],
-    "assault_systems": "Ami",
-    "headquarter_system": "Bridi"
-  },
-  "Jayai": {
-    "is_island_constellation": false,
-    "staging_system": "Sosan",
-    "vanguard_systems": [
-      "Tararan",
-      "Asghed",
-      "Halmah"
-    ],
-    "assault_systems": [
-      "Arayar",
-      "Labapi"
-    ],
-    "headquarter_system": "Roushzar"
-  },
-  "Joas": {
-    "is_island_constellation": false,
-    "staging_system": "Bimener",
-    "vanguard_systems": [
-      "Khabi",
-      "Kenobanala",
-      "Ubtes"
-    ],
-    "assault_systems": "Asabih",
-    "headquarter_system": "Uanzin"
-  },
-  "Kihkounad": {
-    "is_island_constellation": false,
-    "staging_system": "Partod",
-    "vanguard_systems": [
-      "Anara",
-      "Seshi",
-      "Sharza"
-    ],
-    "assault_systems": "Pirna",
-    "headquarter_system": "Azedi"
-  },
-  "Kurala": {
-    "is_island_constellation": false,
-    "staging_system": "Prism",
-    "vanguard_systems": [
-      "Asakai",
-      "Elunala",
-      "Ikoskio",
-      "Mushikegi"
-    ],
-    "assault_systems": [
-      "Okkamon",
-      "Vaaralen"
-    ],
-    "headquarter_system": "Teskanen"
-  },
-  "Leseasesh": {
-    "is_island_constellation": false,
-    "staging_system": "Esubara",
-    "vanguard_systems": [
-      "Yahyerer",
-      "Zazamye",
-      "Shafrak",
-      "Getrenjesa"
-    ],
-    "assault_systems": [
-      "Jerhesh",
-      "Defsunun"
-    ],
-    "headquarter_system": "Nalnifan"
-  },
-  "Maal": {
-    "is_island_constellation": false,
-    "staging_system": "Bapraya",
-    "vanguard_systems": [
-      "Ghekon",
-      "Pserz",
-      "Soza"
-    ],
-    "assault_systems": "Illi",
-    "headquarter_system": "Anohel"
-  },
-  "Makh": {
-    "is_island_constellation": false,
-    "staging_system": "Korridi",
-    "vanguard_systems": [
-      "Bantish",
-      "Lela",
-      "Saphthar"
-    ],
-    "assault_systems": "Itrin",
-    "headquarter_system": "Keri"
-  },
-  "Mallugier": {
-    "is_island_constellation": false,
-    "staging_system": "Amasiree",
-    "vanguard_systems": [
-      "Amoen",
-      "Aubonnie",
-      "Hedoubel"
-    ],
-    "assault_systems": [
-      "Gallusiene",
-      "Ruerrotta"
-    ],
-    "headquarter_system": "Avaux"
-  },
-  "Mamouna": {
-    "is_island_constellation": false,
-    "staging_system": "Podion",
-    "vanguard_systems": [
-      "Kuharah",
-      "Futzchag",
-      "Jayneleb"
-    ],
-    "assault_systems": "Lilmad",
-    "headquarter_system": "Kazna"
-  },
-  "Mareerieh": {
-    "is_island_constellation": false,
-    "staging_system": "Vehan",
-    "vanguard_systems": [
-      "Onanam",
-      "Sadana",
-      "Udianoor"
-    ],
-    "assault_systems": "Isid",
-    "headquarter_system": "Marmeha"
-  },
-  "Meli": {
-    "is_island_constellation": false,
-    "staging_system": "Naka",
-    "vanguard_systems": [
-      "Aring",
-      "Chej",
-      "Gayar"
-    ],
-    "assault_systems": [
-      "Noranim",
-      "Petidu"
-    ],
-    "headquarter_system": "Menai"
-  },
-  "Mivora": {
-    "is_island_constellation": false,
-    "staging_system": "Fuskunen",
-    "vanguard_systems": [
-      "Otosela",
-      "Uemon",
-      "Paala"
-    ],
-    "assault_systems": "Akkio",
-    "headquarter_system": "Tasti"
-  },
-  "Monalaz": {
-    "is_island_constellation": false,
-    "staging_system": "Access",
-    "vanguard_systems": [
-      "Angur",
-      "Djimame",
-      "Hangond"
-    ],
-    "assault_systems": "Mozzidit",
-    "headquarter_system": "Antem"
-  },
-  "Nadire": {
-    "is_island_constellation": false,
-    "staging_system": "Esmes",
-    "vanguard_systems": [
-      "Aetree",
-      "Allipes",
-      "Goinard"
-    ],
-    "assault_systems": "Raeghoscon",
-    "headquarter_system": "Lermireve"
-  },
-  "Okakuola": {
-    "is_island_constellation": false,
-    "staging_system": "Notoras",
-    "vanguard_systems": [
-      "Hirri",
-      "Kedama",
-      "Nisuwa",
-      "Oinasiken",
-      "Reitsato"
-    ],
-    "assault_systems": [
-      "Pynekastoh",
-      "Rakapas",
-      "Teimo"
-    ],
-    "headquarter_system": "Iwisoda"
-  },
-  "Ombil": {
-    "is_island_constellation": false,
-    "staging_system": "Yekh",
-    "vanguard_systems": [
-      "Balas",
-      "Edilkam",
-      "Ertoo",
-      "Feshur",
-      "Hoseen",
-      "Pemsah",
-      "Yiratal"
-    ],
-    "assault_systems": [
-      "Fihrneh",
-      "Gesh",
-      "Hakatiz",
-      "Khnar"
-    ],
-    "headquarter_system": "Parouz"
-  },
-  "Pezarba": {
-    "is_island_constellation": false,
-    "staging_system": "Hiremir",
-    "vanguard_systems": [
-      "Zinoo",
-      "Sechmaren"
-    ],
-    "assault_systems": [
-      "Omam",
-      "Bersyrim"
-    ],
-    "headquarter_system": "Mod"
-  },
-  "Ravin": {
-    "is_island_constellation": false,
-    "staging_system": "Kerying",
-    "vanguard_systems": [
-      "Arzi",
-      "Oguser",
-      "Zorenyen"
-    ],
-    "assault_systems": [
-      "Mafra",
-      "Schmaeel"
-    ],
-    "headquarter_system": "Abath"
-  },
-  "Seevadin": {
-    "is_island_constellation": false,
-    "staging_system": "Upt",
-    "vanguard_systems": [
-      "Gehi",
-      "Ham",
-      "Vezila"
-    ],
-    "assault_systems": [
-      "Claini",
-      "Seshala"
-    ],
-    "headquarter_system": "Hemouner"
-  },
-  "Selonat": {
-    "is_island_constellation": false,
-    "staging_system": "Ned",
-    "vanguard_systems": [
-      "Fobiner",
-      "Karan",
-      "Nouta"
-    ],
-    "assault_systems": [
-      "Esaeel",
-      "Huna"
-    ],
-    "headquarter_system": "Hophib"
-  },
-  "Semou": {
-    "is_island_constellation": false,
-    "staging_system": "Arzad",
-    "vanguard_systems": [
-      "Ezzara",
-      "Sifilar"
-    ],
-    "assault_systems": [
-      "Raa",
-      "Oyeman"
-    ],
-    "headquarter_system": "Tzvi"
-  },
-  "Serthoulde": {
-    "is_island_constellation": false,
-    "staging_system": "Athounon",
-    "vanguard_systems": [
-      "Alparena",
-      "Arderonne",
-      "Mercomesier",
-      "Reschard"
-    ],
-    "assault_systems": [
-      "Alamel",
-      "Odamia"
-    ],
-    "headquarter_system": "Mantenault"
-  },
-  "Sukanan": {
-    "is_island_constellation": false,
-    "staging_system": "Tirbam",
-    "vanguard_systems": [
-      "Keshirou",
-      "Rethan",
-      "Nasesharafa"
-    ],
-    "assault_systems": "Ordat",
-    "headquarter_system": "Teshkat"
-  },
-  "Tandoiras": {
-    "is_island_constellation": false,
-    "staging_system": "Haras",
-    "vanguard_systems": [
-      "Oyonata",
-      "Sahtogas",
-      "Tannokan"
-    ],
-    "assault_systems": "Kurniainen",
-    "headquarter_system": "Saidusairos"
-  },
-  "Tartatven": {
-    "is_island_constellation": false,
-    "staging_system": "Muttokon",
-    "vanguard_systems": [
-      "Heild",
-      "Aedald",
-      "Audesder"
-    ],
-    "assault_systems": "Hrokkur",
-    "headquarter_system": "Hrober"
-  },
-  "Tendrara": {
-    "is_island_constellation": false,
-    "staging_system": "Arza",
-    "vanguard_systems": [
-      "Liparer",
-      "Miroona",
-      "Ranni"
-    ],
-    "assault_systems": "Jedandan",
-    "headquarter_system": "Enal"
-  },
-  "Umamon": {
-    "is_island_constellation": false,
-    "staging_system": "Saranen",
-    "vanguard_systems": [
-      "Karjataimon",
-      "Anin",
-      "Tartoken"
-    ],
-    "assault_systems": "Nannaras",
-    "headquarter_system": "Tamo"
-  },
-  "Urpiken": {
-    "is_island_constellation": false,
-    "staging_system": "Kehjari",
-    "vanguard_systems": [
-      "Ashitsu",
-      "Ienakkamon",
-      "Villasen",
-      "Korasen"
-    ],
-    "assault_systems": [
-      "Hykanima",
-      "Okagaiken"
-    ],
-    "headquarter_system": "Sarenemi"
-  },
-  "Viriette": {
-    "is_island_constellation": false,
-    "staging_system": "Brarel",
-    "vanguard_systems": [
-      "Annancale",
-      "Intaki",
-      "Vey"
-    ],
-    "assault_systems": [
-      "Agoze",
-      "Ostingele"
-    ],
-    "headquarter_system": "Harroule"
-  },
-  "Woenckee": {
-    "is_island_constellation": false,
-    "staging_system": "Muetralle",
-    "vanguard_systems": [
-      "Costolle",
-      "Melmaniel",
-      "Ouelletta"
-    ],
-    "assault_systems": "Murethand",
-    "headquarter_system": "Loes"
+    "Agiesseson": {
+      "is_island_constellation": false,
+      "staging_system": "Claysson",
+      "vanguard_systems": [
+        "Adiere",
+        "Oirtlair",
+        "Olelon",
+        "Stetille"
+      ],
+      "assault_systems": [
+        "Auberulle",
+        "Doussivitte"
+      ],
+      "headquarter_system": "Unel"
+    },
+    "Ahrnot": {
+      "is_island_constellation": false,
+      "staging_system": "Kasi",
+      "vanguard_systems": [
+        "Hilmar",
+        "Jeshideh",
+        "Shura"
+      ],
+      "assault_systems": [
+        "Yooh"
+      ],
+      "headquarter_system": "Hostakoh"
+    },
+    "Ajah": {
+      "is_island_constellation": false,
+      "staging_system": "Sizamod",
+      "vanguard_systems": [
+        "Assiad",
+        "Iswa",
+        "Rand",
+        "Rumida"
+      ],
+      "assault_systems": [
+        "Kerepa",
+        "Marthia",
+        "Nosodis"
+      ],
+      "headquarter_system": "Safilbab"
+    },
+    "Algintal": {
+      "is_island_constellation": false,
+      "staging_system": "Barmalie",
+      "vanguard_systems": [
+        "Audaene",
+        "Augnais",
+        "Fluekele",
+        "Jolia"
+      ],
+      "assault_systems": [
+        "Alsottobier",
+        "Deltole",
+        "Parchanier"
+      ],
+      "headquarter_system": "Colelie"
+    },
+    "Amdimmah": {
+      "is_island_constellation": false,
+      "staging_system": "Moniyyuku",
+      "vanguard_systems": [
+        "Palas",
+        "Reteka",
+        "Safshela"
+      ],
+      "assault_systems": [
+        "Gidali"
+      ],
+      "headquarter_system": "Molea"
+    },
+    "Ancbeu": {
+      "is_island_constellation": false,
+      "staging_system": "Chesiette",
+      "vanguard_systems": [
+        "Annelle",
+        "Claulenne",
+        "Masalle"
+      ],
+      "assault_systems": [
+        "Sortet"
+      ],
+      "headquarter_system": "Scolluzer"
+    },
+    "Ankard": {
+      "is_island_constellation": false,
+      "staging_system": "Vilur",
+      "vanguard_systems": [
+        "Altrinur",
+        "Eygfe",
+        "Reset"
+      ],
+      "assault_systems": [
+        "Fildar",
+        "Olbra"
+      ],
+      "headquarter_system": "Jondik"
+    },
+    "Aokinen": {
+      "is_island_constellation": false,
+      "staging_system": "Astoh",
+      "vanguard_systems": [
+        "Onnamon",
+        "Tsuruma",
+        "Uuhulanen"
+      ],
+      "assault_systems": [
+        "Rohamaa",
+        "Samanuni"
+      ],
+      "headquarter_system": "Uchomida"
+    },
+    "Aptetter": {
+      "is_island_constellation": false,
+      "staging_system": "Libold",
+      "vanguard_systems": [
+        "Aldrat",
+        "Erstur",
+        "Urnhard"
+      ],
+      "assault_systems": [
+        "Fredagod"
+      ],
+      "headquarter_system": "Hardbako"
+    },
+    "Araz": {
+      "is_island_constellation": false,
+      "staging_system": "Koona",
+      "vanguard_systems": [
+        "Jakri",
+        "Munory",
+        "Nidupad",
+        "Zimse"
+      ],
+      "assault_systems": [
+        "Aphi",
+        "Garisas"
+      ],
+      "headquarter_system": "Chanoun"
+    },
+    "Arekin": {
+      "is_island_constellation": false,
+      "staging_system": "Kaimon",
+      "vanguard_systems": [
+        "Alikara",
+        "Kausaaja",
+        "Oiniken"
+      ],
+      "assault_systems": [
+        "Aikoro"
+      ],
+      "headquarter_system": "Ahynada"
+    },
+    "Argeir": {
+      "is_island_constellation": false,
+      "staging_system": "Klaevik",
+      "vanguard_systems": [
+        "Atonder",
+        "Hotrardik",
+        "Ridoner"
+      ],
+      "assault_systems": [
+        "Engosi"
+      ],
+      "headquarter_system": "Orduin"
+    },
+    "Asalola": {
+      "is_island_constellation": false,
+      "staging_system": "Torrinos",
+      "vanguard_systems": [
+        "Ibura",
+        "Isinokka",
+        "Yoma"
+      ],
+      "assault_systems": [
+        "Oipo"
+      ],
+      "headquarter_system": "Haajinen"
+    },
+    "Avib": {
+      "is_island_constellation": false,
+      "staging_system": "Adia",
+      "vanguard_systems": [
+        "Azizora",
+        "Hadonoo",
+        "Shabura"
+      ],
+      "assault_systems": [
+        "Jarshitsan"
+      ],
+      "headquarter_system": "Ahmak"
+    },
+    "Brazinget": {
+      "is_island_constellation": false,
+      "staging_system": "Lumegen",
+      "vanguard_systems": [
+        "Gedugaud",
+        "Oppold",
+        "Tratokard"
+      ],
+      "assault_systems": [
+        "Geffur"
+      ],
+      "headquarter_system": "Hilfhurmur"
+    },
+    "Caldari Border Zone": {
+      "is_island_constellation": false,
+      "staging_system": "Sivala",
+      "vanguard_systems": [
+        "Hatakani",
+        "Iivinen",
+        "Tennen"
+      ],
+      "assault_systems": [
+        "Yashunen"
+      ],
+      "headquarter_system": "Kassigainen"
+    },
+    "Charak": {
+      "is_island_constellation": false,
+      "staging_system": "Abhan",
+      "vanguard_systems": [
+        "Anyed",
+        "Chiga",
+        "Habu"
+      ],
+      "assault_systems": [
+        "Anzalaisio"
+      ],
+      "headquarter_system": "Asanot"
+    },
+    "Chardu": {
+      "is_island_constellation": false,
+      "staging_system": "Lahnina",
+      "vanguard_systems": [
+        "Etav",
+        "Pedel",
+        "Saheri"
+      ],
+      "assault_systems": [
+        "Anila",
+        "Yeeramoun"
+      ],
+      "headquarter_system": "Ides"
+    },
+    "Damadil": {
+      "is_island_constellation": false,
+      "staging_system": "Perdan",
+      "vanguard_systems": [
+        "Kibursha",
+        "Hostni",
+        "Mimime"
+      ],
+      "assault_systems": [
+        "Onazel",
+        "Asesamy"
+      ],
+      "headquarter_system": "Lossa"
+    },
+    "Daredan": {
+      "is_island_constellation": false,
+      "staging_system": "Akes",
+      "vanguard_systems": [
+        "Hati",
+        "Riavayed",
+        "Uadelah"
+      ],
+      "assault_systems": [
+        "Hakshma",
+        "Laddiaha"
+      ],
+      "headquarter_system": "Nakatre"
+    },
+    "Elalan": {
+      "is_island_constellation": false,
+      "staging_system": "Aydoteaux",
+      "vanguard_systems": [
+        "Averon",
+        "Carirgnottin",
+        "Muer",
+        "Odixie",
+        "Scuelazyns",
+        "Tolle"
+      ],
+      "assault_systems": [
+        "Angymonne",
+        "Antollare",
+        "Enedore",
+        "Laic"
+      ],
+      "headquarter_system": "Avele"
+    },
+    "Enka": {
+      "is_island_constellation": true,
+      "staging_system": "Palpis",
+      "vanguard_systems": [
+        "Arveyil",
+        "Nidebora",
+        "Ulerah",
+        "Uktiad"
+      ],
+      "assault_systems": [
+        "Faktun",
+        "Halenan"
+      ],
+      "headquarter_system": "Mili"
+    },
+    "Erada": {
+      "is_island_constellation": false,
+      "staging_system": "Loguttur",
+      "vanguard_systems": [
+        "Krilmokenur",
+        "Magiko",
+        "Onga",
+        "Vullat"
+      ],
+      "assault_systems": [
+        "Larkugei",
+        "Oremmulf",
+        "Osaumuni"
+      ],
+      "headquarter_system": "Hurjafren"
+    },
+    "Eustron": {
+      "is_island_constellation": false,
+      "staging_system": "Andole",
+      "vanguard_systems": [
+        "Cat",
+        "Derririntel",
+        "Ommaret"
+      ],
+      "assault_systems": [
+        "Atlangeins"
+      ],
+      "headquarter_system": "Hecarrin"
+    },
+    "Fabas": {
+      "is_island_constellation": false,
+      "staging_system": "Heorah",
+      "vanguard_systems": [
+        "Agal",
+        "Doza",
+        "Ebasez"
+      ],
+      "assault_systems": [
+        "Bania",
+        "Nasreri"
+      ],
+      "headquarter_system": "Girani-Fa"
+    },
+    "Febihkin": {
+      "is_island_constellation": false,
+      "staging_system": "Dantan",
+      "vanguard_systems": [
+        "Kador Prime",
+        "Khafis",
+        "Nordar"
+      ],
+      "assault_systems": [
+        "Askonak",
+        "Murini"
+      ],
+      "headquarter_system": "Uanim"
+    },
+    "Fekhoya": {
+      "is_island_constellation": false,
+      "staging_system": "Balanaz",
+      "vanguard_systems": [
+        "Afnakat",
+        "Bashyam",
+        "Parsesr"
+      ],
+      "assault_systems": [
+        "Firbha"
+      ],
+      "headquarter_system": "Col"
+    },
+    "Finaka": {
+      "is_island_constellation": false,
+      "staging_system": "Geztic",
+      "vanguard_systems": [
+        "Hishai",
+        "Osis",
+        "Sehsasez",
+        "Yezara"
+      ],
+      "assault_systems": [
+        "Ervekam",
+        "Kahah",
+        "Mashtarmem"
+      ],
+      "headquarter_system": "Saloti"
+    },
+    "Frar": {
+      "is_island_constellation": false,
+      "staging_system": "Aderkan",
+      "vanguard_systems": [
+        "Earled",
+        "Ogoten",
+        "Tollus"
+      ],
+      "assault_systems": [
+        "Hebisa",
+        "Polstodur"
+      ],
+      "headquarter_system": "Ansher"
+    },
+    "Gedur": {
+      "is_island_constellation": false,
+      "staging_system": "Abrat",
+      "vanguard_systems": [
+        "Alf",
+        "Arlulf",
+        "Brundakur",
+        "Illuin"
+      ],
+      "assault_systems": [
+        "Aldilur",
+        "Orgron",
+        "Nedegulf"
+      ],
+      "headquarter_system": "Stirht"
+    },
+    "Goins": {
+      "is_island_constellation": true,
+      "staging_system": "Stoure",
+      "vanguard_systems": [
+        "Arasare",
+        "Lazer",
+        "Yvelet"
+      ],
+      "assault_systems": [
+        "Vecodie"
+      ],
+      "headquarter_system": "Yvaeroure"
+    },
+    "Haurala": {
+      "is_island_constellation": false,
+      "staging_system": "Kino",
+      "vanguard_systems": [
+        "Erenta",
+        "Ouranienen",
+        "Uemisaisen"
+      ],
+      "assault_systems": [
+        "Sotrentaira"
+      ],
+      "headquarter_system": "Raussinen"
+    },
+    "Hoosa": {
+      "is_island_constellation": false,
+      "staging_system": "Horir",
+      "vanguard_systems": [
+        "Abaim",
+        "Somouh",
+        "Sorzielang"
+      ],
+      "assault_systems": [
+        "Sayartchen",
+        "Teshi"
+      ],
+      "headquarter_system": "Gosalav"
+    },
+    "Ichida": {
+      "is_island_constellation": false,
+      "staging_system": "Malpara",
+      "vanguard_systems": [
+        "Hakodan",
+        "Hatori",
+        "Ronne"
+      ],
+      "assault_systems": [
+        "Jarkkolen"
+      ],
+      "headquarter_system": "Junsen"
+    },
+    "Ihilakken": {
+      "is_island_constellation": false,
+      "staging_system": "Sakenta",
+      "vanguard_systems": [
+        "Ansila",
+        "Aokannitoh",
+        "Hirtamon",
+        "Ikuchi"
+      ],
+      "assault_systems": [
+        "Hykkota",
+        "Ohmahailen",
+        "Outuni"
+      ],
+      "headquarter_system": "Eskunen"
+    },
+    "Jonar": {
+      "is_island_constellation": false,
+      "staging_system": "Anbald",
+      "vanguard_systems": [
+        "Bongveber",
+        "Freatlidur",
+        "Maturat"
+      ],
+      "assault_systems": [
+        "Roleinn",
+        "Vorsk"
+      ],
+      "headquarter_system": "Eiluvodi"
+    },
+    "Jonenor": {
+      "is_island_constellation": false,
+      "staging_system": "Gallareue",
+      "vanguard_systems": [
+        "Ansone",
+        "Dunraelare",
+        "Nausschie",
+        "Trosquesere"
+      ],
+      "assault_systems": [
+        "Estene",
+        "Stayme"
+      ],
+      "headquarter_system": "Inghenges"
+    },
+    "Kainokai": {
+      "is_island_constellation": false,
+      "staging_system": "Ajanen",
+      "vanguard_systems": [
+        "Autama",
+        "Kuoka",
+        "Tsukuras"
+      ],
+      "assault_systems": [
+        "Kirras"
+      ],
+      "headquarter_system": "Nani"
+    },
+    "Kakol": {
+      "is_island_constellation": false,
+      "staging_system": "Neburab",
+      "vanguard_systems": [
+        "Aband",
+        "Ghesis",
+        "Gonan"
+      ],
+      "assault_systems": [
+        "Gamdis",
+        "Joamma"
+      ],
+      "headquarter_system": "Joramok"
+    },
+    "Kalangin": {
+      "is_island_constellation": false,
+      "staging_system": "Lachailes",
+      "vanguard_systems": [
+        "Eshtah",
+        "Kasrasi",
+        "Ordize",
+        "Rashy"
+      ],
+      "assault_systems": [
+        "Fovihi",
+        "Psasa"
+      ],
+      "headquarter_system": "Kiereend"
+    },
+    "Kekah": {
+      "is_island_constellation": false,
+      "staging_system": "Harva",
+      "vanguard_systems": [
+        "Aghesi",
+        "Charra",
+        "Patzcha"
+      ],
+      "assault_systems": [
+        "Airshaz"
+      ],
+      "headquarter_system": "Fabin"
+    },
+    "Kehina": {
+      "is_island_constellation": false,
+      "staging_system": "Nalu",
+      "vanguard_systems": [
+        "Esteban",
+        "Luromooh",
+        "Sahdil"
+      ],
+      "assault_systems": [
+        "Nadohman"
+      ],
+      "headquarter_system": "Moussou"
+    },
+    "Kiartanne": {
+      "is_island_constellation": false,
+      "staging_system": "Theruesse",
+      "vanguard_systems": [
+        "Ansalle",
+        "Ellmay",
+        "Gisleres"
+      ],
+      "assault_systems": [
+        "Amygnon",
+        "Jufvitte"
+      ],
+      "headquarter_system": "Scheenins"
+    },
+    "Kisana": {
+      "is_island_constellation": false,
+      "staging_system": "Eredan",
+      "vanguard_systems": [
+        "Gheth",
+        "Lisudeh",
+        "Mehatoor"
+      ],
+      "assault_systems": [
+        "Sasoutikh"
+      ],
+      "headquarter_system": "Ohide"
+    },
+    "Lorundio": {
+      "is_island_constellation": false,
+      "staging_system": "Asgeir",
+      "vanguard_systems": [
+        "Evuldgenzo",
+        "Flost",
+        "Ongund"
+      ],
+      "assault_systems": [
+        "Eust"
+      ],
+      "headquarter_system": "Todrir"
+    },
+    "Maddam": {
+      "is_island_constellation": false,
+      "staging_system": "Chesoh",
+      "vanguard_systems": [
+        "Hama",
+        "Hanan",
+        "Irnal",
+        "Sarum Prime"
+      ],
+      "assault_systems": [
+        "Alkabsi",
+        "Bagodan",
+        "Mahrokht"
+      ],
+      "headquarter_system": "Murzi"
+    },
+    "Maseend": {
+      "is_island_constellation": false,
+      "staging_system": "Ana",
+      "vanguard_systems": [
+        "Hamse",
+        "Jaswelu",
+        "Lashkai",
+        "Zhilshinou"
+      ],
+      "assault_systems": [
+        "Maiah",
+        "Yuhelia"
+      ],
+      "headquarter_system": "Barira"
+    },
+    "Mayonhen": {
+      "is_island_constellation": true,
+      "staging_system": "Mishi",
+      "vanguard_systems": [
+        "Avada",
+        "Haimeh",
+        "Pahineh"
+      ],
+      "assault_systems": [
+        "Bazadod"
+      ],
+      "headquarter_system": "Chibi"
+    },
+    "Mazake": {
+      "is_island_constellation": false,
+      "staging_system": "Sakhti",
+      "vanguard_systems": [
+        "Hiramu",
+        "Hutian",
+        "Mazitah",
+        "Pelkia"
+      ],
+      "assault_systems": [
+        "Joppaya",
+        "Raren"
+      ],
+      "headquarter_system": "Noli"
+    },
+    "Megeh": {
+      "is_island_constellation": false,
+      "staging_system": "Dresi",
+      "vanguard_systems": [
+        "Aharalel",
+        "Gensela",
+        "Zororzih"
+      ],
+      "assault_systems": [
+        "Aphend",
+        "Romi"
+      ],
+      "headquarter_system": "Hiroudeh"
+    },
+    "Mekashtad": {
+      "is_island_constellation": false,
+      "staging_system": "Pirohdim",
+      "vanguard_systems": [
+        "Iosantin",
+        "Janus",
+        "Orva",
+        "Salashayama",
+        "Thiarer",
+        "Zet"
+      ],
+      "assault_systems": [
+        "Amphar",
+        "Nikh",
+        "Usroh"
+      ],
+      "headquarter_system": "Agha"
+    },
+    "Mimishia": {
+      "is_island_constellation": false,
+      "staging_system": "Unkah",
+      "vanguard_systems": [
+        "Atoosh",
+        "Hoona",
+        "Mimen"
+      ],
+      "assault_systems": [
+        "Thashkarai"
+      ],
+      "headquarter_system": "Sacalan"
+    },
+    "Mobit": {
+      "is_island_constellation": false,
+      "staging_system": "Narai",
+      "vanguard_systems": [
+        "Bashakru",
+        "Shuria",
+        "Sukirah"
+      ],
+      "assault_systems": [
+        "Mikhir",
+        "Ziona"
+      ],
+      "headquarter_system": "Akhragan"
+    },
+    "Moghiz": {
+      "is_island_constellation": false,
+      "staging_system": "Yehnifi",
+      "vanguard_systems": [
+        "Kooreng",
+        "Shaggoth",
+        "Ustni"
+      ],
+      "assault_systems": [
+        "Elmed",
+        "Minin"
+      ],
+      "headquarter_system": "Jennim"
+    },
+    "Mossas": {
+      "is_island_constellation": false,
+      "staging_system": "Shala",
+      "vanguard_systems": [
+        "Ibaria",
+        "Maspah",
+        "Zemalu"
+      ],
+      "assault_systems": [
+        "Juddi"
+      ],
+      "headquarter_system": "Khankenirdia"
+    },
+    "Mulata": {
+      "is_island_constellation": false,
+      "staging_system": "Hizhara",
+      "vanguard_systems": [
+        "Ahala",
+        "Arera",
+        "Knophtikoo"
+      ],
+      "assault_systems": [
+        "Hai",
+        "Seiradih"
+      ],
+      "headquarter_system": "Mamenkhanar"
+    },
+    "Nagaslaiken": {
+      "is_island_constellation": false,
+      "staging_system": "Saikanen",
+      "vanguard_systems": [
+        "Jeras",
+        "Kakki",
+        "Oijamon"
+      ],
+      "assault_systems": [
+        "Auviken"
+      ],
+      "headquarter_system": "Ohvosamon"
+    },
+    "Naloran": {
+      "is_island_constellation": false,
+      "staging_system": "Akhmoh",
+      "vanguard_systems": [
+        "Hapala",
+        "Salah",
+        "Yebouz"
+      ],
+      "assault_systems": [
+        "Syrikos"
+      ],
+      "headquarter_system": "Hikansog"
+    },
+    "Nasorin": {
+      "is_island_constellation": false,
+      "staging_system": "Azhgabid",
+      "vanguard_systems": [
+        "Arkoz",
+        "Jinizu",
+        "Taru",
+        "Yanuel"
+      ],
+      "assault_systems": [
+        "Nafrivik",
+        "Remoriu"
+      ],
+      "headquarter_system": "Phoren"
+    },
+    "Nimedaz": {
+      "is_island_constellation": false,
+      "staging_system": "Chaktaren",
+      "vanguard_systems": [
+        "Danyana",
+        "Jinkah",
+        "Nibainkier",
+        "Polfaly"
+      ],
+      "assault_systems": [
+        "Annad",
+        "Nahyeen"
+      ],
+      "headquarter_system": "Andrub"
+    },
+    "Nohshayess": {
+      "is_island_constellation": false,
+      "staging_system": "Sazre",
+      "vanguard_systems": [
+        "Ipref",
+        "Jachanu",
+        "Khanid Prime",
+        "Kihtaled"
+      ],
+      "assault_systems": [
+        "Agil",
+        "Gousoviba",
+        "Neyi"
+      ],
+      "headquarter_system": "Bukah"
+    },
+    "Norgoh": {
+      "is_island_constellation": false,
+      "staging_system": "Fora",
+      "vanguard_systems": [
+        "Bhizheba",
+        "Eba",
+        "Safizon",
+        "Zatsyaki"
+      ],
+      "assault_systems": [
+        "Artoun",
+        "Ebtesham"
+      ],
+      "headquarter_system": "Isamm"
+    },
+    "Odengsolf": {
+      "is_island_constellation": false,
+      "staging_system": "Balginia",
+      "vanguard_systems": [
+        "Avesber",
+        "Frarn",
+        "Gyng",
+        "Illinfrik"
+      ],
+      "assault_systems": [
+        "Ivar",
+        "Meirakulf"
+      ],
+      "headquarter_system": "Usteli"
+    },
+    "Odilis": {
+      "is_island_constellation": false,
+      "staging_system": "Quier",
+      "vanguard_systems": [
+        "Frarolle",
+        "Gicodel",
+        "Mattere"
+      ],
+      "assault_systems": [
+        "Ethernity",
+        "Meves"
+      ],
+      "headquarter_system": "Athinard"
+    },
+    "Oraron": {
+      "is_island_constellation": false,
+      "staging_system": "Akeva",
+      "vanguard_systems": [
+        "Ejahi",
+        "Gelhan",
+        "Jarizza"
+      ],
+      "assault_systems": [
+        "Asghatil",
+        "Bar"
+      ],
+      "headquarter_system": "Sucha"
+    },
+    "Orshed": {
+      "is_island_constellation": false,
+      "staging_system": "Buftiar",
+      "vanguard_systems": [
+        "Jofan",
+        "Odlib",
+        "Yadi"
+      ],
+      "assault_systems": [
+        "Tidacha"
+      ],
+      "headquarter_system": "Milu"
+    },
+    "Orvanne": {
+      "is_island_constellation": true,
+      "staging_system": "Gererique",
+      "vanguard_systems": [
+        "Niballe",
+        "Odinesyn",
+        "Postouvin"
+      ],
+      "assault_systems": [
+        "Larryn"
+      ],
+      "headquarter_system": "Weraroix"
+    },
+    "Osnins": {
+      "is_island_constellation": false,
+      "staging_system": "Aice",
+      "vanguard_systems": [
+        "Amattens",
+        "Bereye",
+        "Junsoraert",
+        "Jurlesel"
+      ],
+      "assault_systems": [
+        "Arnatele",
+        "Halle"
+      ],
+      "headquarter_system": "Mormoen"
+    },
+    "Osta": {
+      "is_island_constellation": false,
+      "staging_system": "Obrolber",
+      "vanguard_systems": [
+        "Austraka",
+        "Dumkirinur",
+        "Sist"
+      ],
+      "assault_systems": [
+        "Edmalbrurdus",
+        "Kronsur"
+      ],
+      "headquarter_system": "Todeko"
+    },
+    "Otsabaira": {
+      "is_island_constellation": false,
+      "staging_system": "Ukkalen",
+      "vanguard_systems": [
+        "Akkilen",
+        "Keikaken",
+        "Onuse"
+      ],
+      "assault_systems": [
+        "Soshin",
+        "Vattuolen"
+      ],
+      "headquarter_system": "Silen"
+    },
+    "Outartoh": {
+      "is_island_constellation": false,
+      "staging_system": "Ono",
+      "vanguard_systems": [
+        "Annaro",
+        "Isutaka",
+        "Tasabeshi"
+      ],
+      "assault_systems": [
+        "Muvolailen"
+      ],
+      "headquarter_system": "Paara"
+    },
+    "Panorad": {
+      "is_island_constellation": false,
+      "staging_system": "Oraekja",
+      "vanguard_systems": [
+        "Hakeri",
+        "Irgrus",
+        "Nifflung"
+      ],
+      "assault_systems": [
+        "Josekorn"
+      ],
+      "headquarter_system": "Dantbeinn"
+    },
+    "Panoumid": {
+      "is_island_constellation": false,
+      "staging_system": "Nare",
+      "vanguard_systems": [
+        "Imih",
+        "Soumi",
+        "Zinkon"
+      ],
+      "assault_systems": [
+        "Choga"
+      ],
+      "headquarter_system": "Kulu"
+    },
+    "Parrosa": {
+      "is_island_constellation": false,
+      "staging_system": "Kamda",
+      "vanguard_systems": [
+        "Mandoo",
+        "Miah",
+        "Peyiri"
+      ],
+      "assault_systems": [
+        "Yarebap"
+      ],
+      "headquarter_system": "Finid"
+    },
+    "Peges": {
+      "is_island_constellation": false,
+      "staging_system": "Ahteer",
+      "vanguard_systems": [
+        "Hath",
+        "Judra",
+        "Sharios",
+        "Uhodoh"
+      ],
+      "assault_systems": [
+        "Esa",
+        "Kari"
+      ],
+      "headquarter_system": "Arakor"
+    },
+    "Pietanen": {
+      "is_island_constellation": true,
+      "staging_system": "Jotenen",
+      "vanguard_systems": [
+        "Atai",
+        "Otalieto",
+        "Rauntaka"
+      ],
+      "assault_systems": [
+        "Liukikka"
+      ],
+      "headquarter_system": "Aikantoh"
+    },
+    "Qermi": {
+      "is_island_constellation": false,
+      "staging_system": "Lazara",
+      "vanguard_systems": [
+        "Asrios",
+        "Ithar",
+        "Shemah"
+      ],
+      "assault_systems": [
+        "Zorrabed"
+      ],
+      "headquarter_system": "Telang"
+    },
+    "Reya": {
+      "is_island_constellation": false,
+      "staging_system": "Imya",
+      "vanguard_systems": [
+        "Gergish",
+        "Kobam",
+        "Tahli"
+      ],
+      "assault_systems": [
+        "Madomi"
+      ],
+      "headquarter_system": "Hirizan"
+    },
+    "Rifenda": {
+      "is_island_constellation": false,
+      "staging_system": "Ahkour",
+      "vanguard_systems": [
+        "Gaknem",
+        "Nehkiah",
+        "Siyi"
+      ],
+      "assault_systems": [
+        "Iro"
+      ],
+      "headquarter_system": "Abai"
+    },
+    "Ryra": {
+      "is_island_constellation": false,
+      "staging_system": "Thasinaz",
+      "vanguard_systems": [
+        "Choonka",
+        "Dihra",
+        "Dital"
+      ],
+      "assault_systems": [
+        "Esescama"
+      ],
+      "headquarter_system": "Odin"
+    },
+    "Ruomo": {
+      "is_island_constellation": false,
+      "staging_system": "Itamo",
+      "vanguard_systems": [
+        "Ahtulaima",
+        "Kylmabe",
+        "Vaankalen"
+      ],
+      "assault_systems": [
+        "Jatate",
+        "Mitsolen"
+      ],
+      "headquarter_system": "Mahtista"
+    },
+    "San Matar": {
+      "is_island_constellation": false,
+      "staging_system": "Zaid",
+      "vanguard_systems": [
+        "Akpivem",
+        "Nirbhi",
+        "Tanoo",
+        "Yuzier"
+      ],
+      "assault_systems": [
+        "Jark",
+        "Sasta"
+      ],
+      "headquarter_system": "Lashesih"
+    },
+    "Sanair": {
+      "is_island_constellation": false,
+      "staging_system": "Ahrosseas",
+      "vanguard_systems": [
+        "Adahum",
+        "Goram",
+        "Tendhyes"
+      ],
+      "assault_systems": [
+        "Tividu"
+      ],
+      "headquarter_system": "Anjedin"
+    },
+    "Santenpaa": {
+      "is_island_constellation": false,
+      "staging_system": "Motsu",
+      "vanguard_systems": [
+        "Aramachi",
+        "Komo",
+        "Laah",
+        "Oichiya"
+      ],
+      "assault_systems": [
+        "Saila",
+        "Isenairos"
+      ],
+      "headquarter_system": "Uotila"
+    },
+    "Sib": {
+      "is_island_constellation": false,
+      "staging_system": "Moro",
+      "vanguard_systems": [
+        "Ainsan",
+        "Badivefi",
+        "Talidal"
+      ],
+      "assault_systems": [
+        "Ashi",
+        "Tzashrah"
+      ],
+      "headquarter_system": "Sabusi"
+    },
+    "Somi": {
+      "is_island_constellation": false,
+      "staging_system": "Matyas",
+      "vanguard_systems": [
+        "Imeshasa",
+        "Jarzalad",
+        "Pimsu"
+      ],
+      "assault_systems": [
+        "Nafomeh"
+      ],
+      "headquarter_system": "Riramia"
+    },
+    "Sosarir": {
+      "is_island_constellation": false,
+      "staging_system": "Shumam",
+      "vanguard_systems": [
+        "Ardishapur Prime",
+        "Gid",
+        "Nererut",
+        "Nifshed",
+        "Vashkah"
+      ],
+      "assault_systems": [
+        "Rasile",
+        "Sitanan",
+        "Thebeka"
+      ],
+      "headquarter_system": "Dakba"
+    },
+    "Subhatoub": {
+      "is_island_constellation": false,
+      "staging_system": "Seitam",
+      "vanguard_systems": [
+        "Tew",
+        "Zehru",
+        "Zith"
+      ],
+      "assault_systems": [
+        "Alra",
+        "Ilas"
+      ],
+      "headquarter_system": "Sinid"
+    },
+    "Suon": {
+      "is_island_constellation": false,
+      "staging_system": "Inari",
+      "vanguard_systems": [
+        "Inaro",
+        "Irjunen",
+        "Waskisen"
+      ],
+      "assault_systems": [
+        "Sirppala"
+      ],
+      "headquarter_system": "Kaaputenen"
+    },
+    "Stadakorn": {
+      "is_island_constellation": false,
+      "staging_system": "Situner",
+      "vanguard_systems": [
+        "Agtver",
+        "Datulen",
+        "Erego",
+        "Meimungen",
+        "Totkubad"
+      ],
+      "assault_systems": [
+        "Evettullur",
+        "Hjortur",
+        "Tamekamur"
+      ],
+      "headquarter_system": "Egbonbet"
+    },
+    "Trigentia": {
+      "is_island_constellation": false,
+      "staging_system": "Akhwa",
+      "vanguard_systems": [
+        "Inis-Ilix",
+        "Sonama",
+        "Suner"
+      ],
+      "assault_systems": [
+        "Halibai",
+        "Turba"
+      ],
+      "headquarter_system": "Kothe"
+    },
+    "Tsemshatel": {
+      "is_island_constellation": false,
+      "staging_system": "Yasud",
+      "vanguard_systems": [
+        "Azerakish",
+        "Ghishul",
+        "Lari",
+        "Moutid"
+      ],
+      "assault_systems": [
+        "Asezai",
+        "Yeder"
+      ],
+      "headquarter_system": "Ferira"
+    },
+    "Unour": {
+      "is_island_constellation": true,
+      "staging_system": "Vilinnon",
+      "vanguard_systems": [
+        "Iffrue",
+        "Mollin",
+        "Ommaerrer"
+      ],
+      "assault_systems": [
+        "Ivorider"
+      ],
+      "headquarter_system": "Osmallanais"
+    },
+    "Urtfer": {
+      "is_island_constellation": false,
+      "staging_system": "Jorus",
+      "vanguard_systems": [
+        "Appen",
+        "Javrendei",
+        "Klir"
+      ],
+      "assault_systems": [
+        "Trer"
+      ],
+      "headquarter_system": "Egmur"
+    },
+    "Wyllequet": {
+      "is_island_constellation": false,
+      "staging_system": "Croleur",
+      "vanguard_systems": [
+        "Atier",
+        "Bawilan",
+        "Brapelille"
+      ],
+      "assault_systems": [
+        "Adrallezoen"
+      ],
+      "headquarter_system": "Brybier"
+    },
+    "Yestadan": {
+      "is_island_constellation": false,
+      "staging_system": "Cailanar",
+      "vanguard_systems": [
+        "Armala",
+        "Murema",
+        "Uchat"
+      ],
+      "assault_systems": [
+        "Ilonarav"
+      ],
+      "headquarter_system": "Gaha"
+    },
+    "Yekti": {
+      "is_island_constellation": false,
+      "staging_system": "Saana",
+      "vanguard_systems": [
+        "Bahromab",
+        "Kudi",
+        "Madirmilire"
+      ],
+      "assault_systems": [
+        "Fabum"
+      ],
+      "headquarter_system": "Sharji"
+    },
+    "Ysiette": {
+      "is_island_constellation": false,
+      "staging_system": "Aclan",
+      "vanguard_systems": [
+        "Jaschercis",
+        "Marosier",
+        "Vaurent"
+      ],
+      "assault_systems": [
+        "Ardallabier",
+        "Lirsautton"
+      ],
+      "headquarter_system": "Blameston"
+    },
+    "Zemont": {
+      "is_island_constellation": false,
+      "staging_system": "Zaimeth",
+      "vanguard_systems": [
+        "Ekid",
+        "Raravoss",
+        "Sharhelund"
+      ],
+      "assault_systems": [
+        "Youl"
+      ],
+      "headquarter_system": "Nakri"
+    },
+    "Aeman": {
+      "is_island_constellation": false,
+      "staging_system": "Rorsins",
+      "vanguard_systems": [
+        "Miroitem",
+        "Otou",
+        "Thelan"
+      ],
+      "assault_systems": [
+        "Lamadent"
+      ],
+      "headquarter_system": "Rancer"
+    },
+    "Afinoo": {
+      "is_island_constellation": false,
+      "staging_system": "Hier",
+      "vanguard_systems": [
+        "Gens",
+        "Jasson",
+        "Kanih"
+      ],
+      "assault_systems": [
+        "Kenahehab"
+      ],
+      "headquarter_system": "Yehaba"
+    },
+    "Aguh": {
+      "is_island_constellation": false,
+      "staging_system": "Hahyil",
+      "vanguard_systems": [
+        "Aranir",
+        "Eshwil",
+        "Sosa"
+      ],
+      "assault_systems": [
+        "Ilahed"
+      ],
+      "headquarter_system": "Ishkad"
+    },
+    "Akar": {
+      "is_island_constellation": false,
+      "staging_system": "Baratar",
+      "vanguard_systems": [
+        "Amafi",
+        "Ashkoo",
+        "Nahrneder"
+      ],
+      "assault_systems": [
+        "Hakana"
+      ],
+      "headquarter_system": "Arzieh"
+    },
+    "Aldodan": {
+      "is_island_constellation": false,
+      "staging_system": "Brin",
+      "vanguard_systems": [
+        "Evati",
+        "Todifrauan",
+        "Arnstur",
+        "Helgatild"
+      ],
+      "assault_systems": [
+        "Lasleinur",
+        "Arnher"
+      ],
+      "headquarter_system": "Ofstold"
+    },
+    "Almur": {
+      "is_island_constellation": false,
+      "staging_system": "Sakulda",
+      "vanguard_systems": [
+        "Gonheim",
+        "Half",
+        "Istodard"
+      ],
+      "assault_systems": [
+        "Altbrard"
+      ],
+      "headquarter_system": "Hedaleolfarber"
+    },
+    "Alpakian": {
+      "is_island_constellation": false,
+      "staging_system": "Rafeme",
+      "vanguard_systems": [
+        "Fanathor",
+        "Nakis",
+        "Pout"
+      ],
+      "assault_systems": [
+        "Zirsem"
+      ],
+      "headquarter_system": "Hezere"
+    },
+    "Alselbosier": {
+      "is_island_constellation": false,
+      "staging_system": "Pain",
+      "vanguard_systems": [
+        "Aunsou",
+        "Gare",
+        "Reynire"
+      ],
+      "assault_systems": [
+        "Cumemare"
+      ],
+      "headquarter_system": "Alperaute"
+    },
+    "Amevync": {
+      "is_island_constellation": false,
+      "staging_system": "Esesier",
+      "vanguard_systems": [
+        "Aldranette",
+        "Evaulon",
+        "Anchauttes"
+      ],
+      "assault_systems": [
+        "Vlillirier",
+        "Alsavoinon"
+      ],
+      "headquarter_system": "Oicx"
+    },
+    "Anama": {
+      "is_island_constellation": false,
+      "staging_system": "Maalna",
+      "vanguard_systems": [
+        "Maseera",
+        "Shakasi",
+        "Zayi"
+      ],
+      "assault_systems": [
+        "Van"
+      ],
+      "headquarter_system": "Shirshocin"
+    },
+    "Angils": {
+      "is_island_constellation": false,
+      "staging_system": "Ualkin",
+      "vanguard_systems": [
+        "Egmar",
+        "Gukarla",
+        "Taff"
+      ],
+      "assault_systems": [
+        "Orfrold"
+      ],
+      "headquarter_system": "Klogori"
+    },
+    "Armi": {
+      "is_island_constellation": false,
+      "staging_system": "Arodan",
+      "vanguard_systems": [
+        "Bourar",
+        "Rammi",
+        "Rimbah"
+      ],
+      "assault_systems": [
+        "Milal"
+      ],
+      "headquarter_system": "Sobenah"
+    },
+    "Aven": {
+      "is_island_constellation": false,
+      "staging_system": "Olin",
+      "vanguard_systems": [
+        "Galnafsad",
+        "Otakod",
+        "Shalne"
+      ],
+      "assault_systems": [
+        "Shapisin"
+      ],
+      "headquarter_system": "Gonditsa"
+    },
+    "Braille": {
+      "is_island_constellation": false,
+      "staging_system": "Vevelonel",
+      "vanguard_systems": [
+        "Meunvon",
+        "Anckee",
+        "Elore",
+        "Yveve"
+      ],
+      "assault_systems": [
+        "Aimoguier",
+        "Conomette"
+      ],
+      "headquarter_system": "Cadelanne"
+    },
+    "Budar": {
+      "is_island_constellation": false,
+      "staging_system": "Ibani",
+      "vanguard_systems": [
+        "Irmalin",
+        "Timudan",
+        "Cabeki"
+      ],
+      "assault_systems": [
+        "Sassecho"
+      ],
+      "headquarter_system": "Goudiyah"
+    },
+    "Elerelle": {
+      "is_island_constellation": false,
+      "staging_system": "Agaullores",
+      "vanguard_systems": [
+        "Babirmoult",
+        "Faurulle",
+        "Hare",
+        "Ogaria"
+      ],
+      "assault_systems": [
+        "Heluene",
+        "Oruse"
+      ],
+      "headquarter_system": "Arittant"
+    },
+    "Elfrard": {
+      "is_island_constellation": false,
+      "staging_system": "Kadlina",
+      "vanguard_systems": [
+        "Aeditide",
+        "Egbinger",
+        "Hegfunden"
+      ],
+      "assault_systems": [
+        "Weld"
+      ],
+      "headquarter_system": "Klingt"
+    },
+    "Essin": {
+      "is_island_constellation": false,
+      "staging_system": "Hofjaldgund",
+      "vanguard_systems": [
+        "Ebolfer",
+        "Eszur",
+        "Gebuladi"
+      ],
+      "assault_systems": [
+        "Frerstorn",
+        "Sirekur"
+      ],
+      "headquarter_system": "Ontorn"
+    },
+    "Eugidi": {
+      "is_island_constellation": false,
+      "staging_system": "Vimeini",
+      "vanguard_systems": [
+        "Aset",
+        "Avenod",
+        "Isbrabata",
+        "Turnur"
+      ],
+      "assault_systems": [
+        "Eytjangard",
+        "Uisper"
+      ],
+      "headquarter_system": "Floseswin"
+    },
+    "EVE": {
+      "is_island_constellation": false,
+      "staging_system": "New Eden",
+      "vanguard_systems": [
+        "Canard",
+        "Central Point",
+        "Promised Land"
+      ],
+      "assault_systems": [
+        "Dead End",
+        "Gateway"
+      ],
+      "headquarter_system": "Exit"
+    },
+    "Fabai": {
+      "is_island_constellation": false,
+      "staging_system": "Sakht",
+      "vanguard_systems": [
+        "Anath",
+        "Naga",
+        "Tisot"
+      ],
+      "assault_systems": [
+        "Omigiav"
+      ],
+      "headquarter_system": "Efu"
+    },
+    "Fribrodi": {
+      "is_island_constellation": false,
+      "staging_system": "Ansen",
+      "vanguard_systems": [
+        "Arifsdald",
+        "Arwa",
+        "Krirald"
+      ],
+      "assault_systems": [
+        "Hakisalki"
+      ],
+      "headquarter_system": "Dudreda"
+    },
+    "Fua": {
+      "is_island_constellation": false,
+      "staging_system": "Amod",
+      "vanguard_systems": [
+        "Akila",
+        "Basan",
+        "Shajarleg"
+      ],
+      "assault_systems": [
+        "Sahda"
+      ],
+      "headquarter_system": "Naguton"
+    },
+    "Ganoure": {
+      "is_island_constellation": false,
+      "staging_system": "Espigoure",
+      "vanguard_systems": [
+        "Ausmaert",
+        "Barleguet",
+        "Vestouve"
+      ],
+      "assault_systems": [
+        "Aulbres"
+      ],
+      "headquarter_system": "Kenninck"
+    },
+    "Hed": {
+      "is_island_constellation": false,
+      "staging_system": "Lantorn",
+      "vanguard_systems": [
+        "Dal",
+        "Siseide",
+        "Vard"
+      ],
+      "assault_systems": [
+        "Auga"
+      ],
+      "headquarter_system": "Amamake"
+    },
+    "Helab": {
+      "is_island_constellation": false,
+      "staging_system": "Sheri",
+      "vanguard_systems": [
+        "Ahraghen",
+        "Ajna",
+        "Tukanas"
+      ],
+      "assault_systems": [
+        "Nielez",
+        "Soliara"
+      ],
+      "headquarter_system": "Fageras"
+    },
+    "Homroon": {
+      "is_island_constellation": false,
+      "staging_system": "Neda",
+      "vanguard_systems": [
+        "Chitiamem",
+        "Zahefeus",
+        "Zephan"
+      ],
+      "assault_systems": [
+        "Kuhri",
+        "Nandeza"
+      ],
+      "headquarter_system": "Dimoohan"
+    },
+    "Inolari": {
+      "is_island_constellation": false,
+      "staging_system": "Pavanakka",
+      "vanguard_systems": [
+        "Innia",
+        "Eha",
+        "Martoh"
+      ],
+      "assault_systems": [
+        "Kinakka"
+      ],
+      "headquarter_system": "Raihbaka"
+    },
+    "Ishaga": {
+      "is_island_constellation": false,
+      "staging_system": "Hikkoken",
+      "vanguard_systems": [
+        "Immuri",
+        "Hallanen",
+        "Nemmamaila"
+      ],
+      "assault_systems": [
+        "Akidagi",
+        "Enaluri"
+      ],
+      "headquarter_system": "Aivonen"
+    },
+    "Isoma": {
+      "is_island_constellation": false,
+      "staging_system": "Tannolen",
+      "vanguard_systems": [
+        "Tama",
+        "Sujarento",
+        "Onatoh",
+        "Eranakko"
+      ],
+      "assault_systems": [
+        "Nagamanen",
+        "Oto"
+      ],
+      "headquarter_system": "Hasmijaala"
+    },
+    "Jakemhih": {
+      "is_island_constellation": false,
+      "staging_system": "Misaba",
+      "vanguard_systems": [
+        "Mamet",
+        "Ziriert",
+        "Rephirib"
+      ],
+      "assault_systems": [
+        "Biphi"
+      ],
+      "headquarter_system": "Hoshoun"
+    },
+    "Jatari": {
+      "is_island_constellation": false,
+      "staging_system": "Khabara",
+      "vanguard_systems": [
+        "Fensi",
+        "Jeni",
+        "Nebian"
+      ],
+      "assault_systems": [
+        "Ami"
+      ],
+      "headquarter_system": "Bridi"
+    },
+    "Jayai": {
+      "is_island_constellation": false,
+      "staging_system": "Sosan",
+      "vanguard_systems": [
+        "Tararan",
+        "Asghed",
+        "Halmah"
+      ],
+      "assault_systems": [
+        "Arayar",
+        "Labapi"
+      ],
+      "headquarter_system": "Roushzar"
+    },
+    "Joas": {
+      "is_island_constellation": false,
+      "staging_system": "Bimener",
+      "vanguard_systems": [
+        "Khabi",
+        "Kenobanala",
+        "Ubtes"
+      ],
+      "assault_systems": [
+        "Asabih"
+      ],
+      "headquarter_system": "Uanzin"
+    },
+    "Kihkounad": {
+      "is_island_constellation": false,
+      "staging_system": "Partod",
+      "vanguard_systems": [
+        "Anara",
+        "Seshi",
+        "Sharza"
+      ],
+      "assault_systems": [
+        "Pirna"
+      ],
+      "headquarter_system": "Azedi"
+    },
+    "Kurala": {
+      "is_island_constellation": false,
+      "staging_system": "Prism",
+      "vanguard_systems": [
+        "Asakai",
+        "Elunala",
+        "Ikoskio",
+        "Mushikegi"
+      ],
+      "assault_systems": [
+        "Okkamon",
+        "Vaaralen"
+      ],
+      "headquarter_system": "Teskanen"
+    },
+    "Leseasesh": {
+      "is_island_constellation": false,
+      "staging_system": "Esubara",
+      "vanguard_systems": [
+        "Yahyerer",
+        "Zazamye",
+        "Shafrak",
+        "Getrenjesa"
+      ],
+      "assault_systems": [
+        "Jerhesh",
+        "Defsunun"
+      ],
+      "headquarter_system": "Nalnifan"
+    },
+    "Maal": {
+      "is_island_constellation": false,
+      "staging_system": "Bapraya",
+      "vanguard_systems": [
+        "Ghekon",
+        "Pserz",
+        "Soza"
+      ],
+      "assault_systems": [
+        "Illi"
+      ],
+      "headquarter_system": "Anohel"
+    },
+    "Makh": {
+      "is_island_constellation": false,
+      "staging_system": "Korridi",
+      "vanguard_systems": [
+        "Bantish",
+        "Lela",
+        "Saphthar"
+      ],
+      "assault_systems": [
+        "Itrin"
+      ],
+      "headquarter_system": "Keri"
+    },
+    "Mallugier": {
+      "is_island_constellation": false,
+      "staging_system": "Amasiree",
+      "vanguard_systems": [
+        "Amoen",
+        "Aubonnie",
+        "Hedoubel"
+      ],
+      "assault_systems": [
+        "Gallusiene",
+        "Ruerrotta"
+      ],
+      "headquarter_system": "Avaux"
+    },
+    "Mamouna": {
+      "is_island_constellation": false,
+      "staging_system": "Podion",
+      "vanguard_systems": [
+        "Kuharah",
+        "Futzchag",
+        "Jayneleb"
+      ],
+      "assault_systems": [
+        "Lilmad"
+      ],
+      "headquarter_system": "Kazna"
+    },
+    "Mareerieh": {
+      "is_island_constellation": false,
+      "staging_system": "Vehan",
+      "vanguard_systems": [
+        "Onanam",
+        "Sadana",
+        "Udianoor"
+      ],
+      "assault_systems": [
+        "Isid"
+      ],
+      "headquarter_system": "Marmeha"
+    },
+    "Meli": {
+      "is_island_constellation": false,
+      "staging_system": "Naka",
+      "vanguard_systems": [
+        "Aring",
+        "Chej",
+        "Gayar"
+      ],
+      "assault_systems": [
+        "Noranim",
+        "Petidu"
+      ],
+      "headquarter_system": "Menai"
+    },
+    "Mivora": {
+      "is_island_constellation": false,
+      "staging_system": "Fuskunen",
+      "vanguard_systems": [
+        "Otosela",
+        "Uemon",
+        "Paala"
+      ],
+      "assault_systems": [
+        "Akkio"
+      ],
+      "headquarter_system": "Tasti"
+    },
+    "Monalaz": {
+      "is_island_constellation": false,
+      "staging_system": "Access",
+      "vanguard_systems": [
+        "Angur",
+        "Djimame",
+        "Hangond"
+      ],
+      "assault_systems": [
+        "Mozzidit"
+      ],
+      "headquarter_system": "Antem"
+    },
+    "Nadire": {
+      "is_island_constellation": false,
+      "staging_system": "Esmes",
+      "vanguard_systems": [
+        "Aetree",
+        "Allipes",
+        "Goinard"
+      ],
+      "assault_systems": [
+        "Raeghoscon"
+      ],
+      "headquarter_system": "Lermireve"
+    },
+    "Okakuola": {
+      "is_island_constellation": false,
+      "staging_system": "Notoras",
+      "vanguard_systems": [
+        "Hirri",
+        "Kedama",
+        "Nisuwa",
+        "Oinasiken",
+        "Reitsato"
+      ],
+      "assault_systems": [
+        "Pynekastoh",
+        "Rakapas",
+        "Teimo"
+      ],
+      "headquarter_system": "Iwisoda"
+    },
+    "Ombil": {
+      "is_island_constellation": false,
+      "staging_system": "Yekh",
+      "vanguard_systems": [
+        "Balas",
+        "Edilkam",
+        "Ertoo",
+        "Feshur",
+        "Hoseen",
+        "Pemsah",
+        "Yiratal"
+      ],
+      "assault_systems": [
+        "Fihrneh",
+        "Gesh",
+        "Hakatiz",
+        "Khnar"
+      ],
+      "headquarter_system": "Parouz"
+    },
+    "Pezarba": {
+      "is_island_constellation": false,
+      "staging_system": "Hiremir",
+      "vanguard_systems": [
+        "Zinoo",
+        "Sechmaren"
+      ],
+      "assault_systems": [
+        "Omam",
+        "Bersyrim"
+      ],
+      "headquarter_system": "Mod"
+    },
+    "Ravin": {
+      "is_island_constellation": false,
+      "staging_system": "Kerying",
+      "vanguard_systems": [
+        "Arzi",
+        "Oguser",
+        "Zorenyen"
+      ],
+      "assault_systems": [
+        "Mafra",
+        "Schmaeel"
+      ],
+      "headquarter_system": "Abath"
+    },
+    "Seevadin": {
+      "is_island_constellation": false,
+      "staging_system": "Upt",
+      "vanguard_systems": [
+        "Gehi",
+        "Ham",
+        "Vezila"
+      ],
+      "assault_systems": [
+        "Claini",
+        "Seshala"
+      ],
+      "headquarter_system": "Hemouner"
+    },
+    "Selonat": {
+      "is_island_constellation": false,
+      "staging_system": "Ned",
+      "vanguard_systems": [
+        "Fobiner",
+        "Karan",
+        "Nouta"
+      ],
+      "assault_systems": [
+        "Esaeel",
+        "Huna"
+      ],
+      "headquarter_system": "Hophib"
+    },
+    "Semou": {
+      "is_island_constellation": false,
+      "staging_system": "Arzad",
+      "vanguard_systems": [
+        "Ezzara",
+        "Sifilar"
+      ],
+      "assault_systems": [
+        "Raa",
+        "Oyeman"
+      ],
+      "headquarter_system": "Tzvi"
+    },
+    "Serthoulde": {
+      "is_island_constellation": false,
+      "staging_system": "Athounon",
+      "vanguard_systems": [
+        "Alparena",
+        "Arderonne",
+        "Mercomesier",
+        "Reschard"
+      ],
+      "assault_systems": [
+        "Alamel",
+        "Odamia"
+      ],
+      "headquarter_system": "Mantenault"
+    },
+    "Sukanan": {
+      "is_island_constellation": false,
+      "staging_system": "Tirbam",
+      "vanguard_systems": [
+        "Keshirou",
+        "Rethan",
+        "Nasesharafa"
+      ],
+      "assault_systems": [
+        "Ordat"
+      ],
+      "headquarter_system": "Teshkat"
+    },
+    "Tandoiras": {
+      "is_island_constellation": false,
+      "staging_system": "Haras",
+      "vanguard_systems": [
+        "Oyonata",
+        "Sahtogas",
+        "Tannokan"
+      ],
+      "assault_systems": [
+        "Kurniainen"
+      ],
+      "headquarter_system": "Saidusairos"
+    },
+    "Tartatven": {
+      "is_island_constellation": false,
+      "staging_system": "Muttokon",
+      "vanguard_systems": [
+        "Heild",
+        "Aedald",
+        "Audesder"
+      ],
+      "assault_systems": [
+        "Hrokkur"
+      ],
+      "headquarter_system": "Hrober"
+    },
+    "Tendrara": {
+      "is_island_constellation": false,
+      "staging_system": "Arza",
+      "vanguard_systems": [
+        "Liparer",
+        "Miroona",
+        "Ranni"
+      ],
+      "assault_systems": [
+        "Jedandan"
+      ],
+      "headquarter_system": "Enal"
+    },
+    "Umamon": {
+      "is_island_constellation": false,
+      "staging_system": "Saranen",
+      "vanguard_systems": [
+        "Karjataimon",
+        "Anin",
+        "Tartoken"
+      ],
+      "assault_systems": [
+        "Nannaras"
+      ],
+      "headquarter_system": "Tamo"
+    },
+    "Urpiken": {
+      "is_island_constellation": false,
+      "staging_system": "Kehjari",
+      "vanguard_systems": [
+        "Ashitsu",
+        "Ienakkamon",
+        "Villasen",
+        "Korasen"
+      ],
+      "assault_systems": [
+        "Hykanima",
+        "Okagaiken"
+      ],
+      "headquarter_system": "Sarenemi"
+    },
+    "Viriette": {
+      "is_island_constellation": false,
+      "staging_system": "Brarel",
+      "vanguard_systems": [
+        "Annancale",
+        "Intaki",
+        "Vey"
+      ],
+      "assault_systems": [
+        "Agoze",
+        "Ostingele"
+      ],
+      "headquarter_system": "Harroule"
+    },
+    "Woenckee": {
+      "is_island_constellation": false,
+      "staging_system": "Muetralle",
+      "vanguard_systems": [
+        "Costolle",
+        "Melmaniel",
+        "Ouelletta"
+      ],
+      "assault_systems": [
+        "Murethand"
+      ],
+      "headquarter_system": "Loes"
+    }
   }
-}
