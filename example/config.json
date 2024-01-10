@@ -4,4 +4,5 @@
   "guildId": "DISCORD_SERVER_ID",
   "channelId": "DISCORD_SERVER_CHANNEL_ID",
   "highSecOnly": true
+  "timeZone": 3
 }
