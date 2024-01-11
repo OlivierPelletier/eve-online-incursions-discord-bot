@@ -2,6 +2,7 @@ import { EmbedFieldData, MessageEmbed } from "discord.js";
 import ESIIncursionState from "../models/esi/ESIIncursionState";
 import IncursionsCacheEntry from "../models/bot/IncursionsCacheEntry";
 import { noIncursionIconUrl } from "../config/icon_urls.json";
+import { timeZone } from "../config/config.json";
 
 class EmbedMessageMapper {
   private readonly greenColor: number = 0x00b129;
@@ -53,6 +54,8 @@ class EmbedMessageMapper {
       .setFooter({
         text: `Message updated on ${EmbedMessageMapper.dateToEveTimeString(
           now
+        )} ${EmbedMessageMapper.dateToMskTimeString(
+            now
         )}`,
       });
   }
@@ -88,40 +91,40 @@ class EmbedMessageMapper {
       .setAuthor({
         name: `${incursionInfo.constellationName}`,
         url: `https://eve-incursions.de/`,
-        iconURL: `${incursionInfo.regionIconUrl}`,
+        iconURL: noIncursionIconUrl,
       })
       .setTitle(
         `${incursionInfo.constellationName} is now in ${incursionInfo.state} state`
       )
       .setDescription(
-        `Detected on ${EmbedMessageMapper.dateToEveTimeString(createAtDate)}`
+        `\`\`\`Started ${EmbedMessageMapper.dateToEveTimeString(createAtDate)} ${EmbedMessageMapper.dateToMskTimeString(createAtDate)}\`\`\``
       )
+      .setThumbnail(`${incursionInfo.regionIconUrl}`)
       .setColor(color)
       .addFields([
         {
           name: "Incursion information:",
-          value: `**Distance from last incursion:** ${lastIncursionDistanceMessage}\n**Influence level:** ${Math.round(
+          value: `\>\>\> **From last:** ${lastIncursionDistanceMessage}\n**Influence:** ${Math.round(
             incursionInfo.influence * 100
-          )}%\n**Island constellation:** ${
+          )}%\n**Island:** ${
             incursionInfo.isIslandConstellation
           }`,
           inline: true,
         },
         {
           name: `Constellation layout:`,
-          value: `**Headquarter:** ${
-            incursionInfo.headquarterSystem
-          }\n**Staging:** ${
-            incursionInfo.stagingSystem
-          }\n**Vanguards:** ${incursionInfo.vanguardSystems.join(
-            ", "
-          )}\n**Assaults:** ${incursionInfo.assaultSystems.join(", ")}`,
+          value: `\>\>\> **HQ:** ${incursionInfo.headquarterSystem
+          }\n**VG:** ${incursionInfo.vanguardSystems.join(", ")
+          }\n**AS:** ${incursionInfo.assaultSystems.join(", ")
+          }\n**ST:** ${incursionInfo.stagingSystem}`,
           inline: true,
         },
       ])
       .setFooter({
         text: `Message updated on ${EmbedMessageMapper.dateToEveTimeString(
           now
+        )} ${EmbedMessageMapper.dateToMskTimeString(
+            now
         )}`,
       });
   }
@@ -130,13 +133,23 @@ class EmbedMessageMapper {
     const locale: Intl.LocalesArgument = "en-US";
     const options: Intl.NumberFormatOptions = { minimumIntegerDigits: 2 };
     const year = date.getUTCFullYear();
-    const month = date.getUTCMonth().toLocaleString(locale, options);
+    const month = (date.getUTCMonth() + 1).toLocaleString(locale, options);
     const day = date.getUTCDate().toLocaleString(locale, options);
     const hours = date.getUTCHours().toLocaleString(locale, options);
     const minutes = date.getUTCMinutes().toLocaleString(locale, options);
 
-    return `${year}-${month}-${day} at ${hours}:${minutes} EVE Time`;
+    return `${year}-${month}-${day} - ${hours}:${minutes} ET`;
   }
+
+  private static dateToMskTimeString(date: Date): string {
+    date.setTime( date.getTime() + timeZone * 60 * 60 * 1000 );
+    const locale: Intl.LocalesArgument = "en-US";
+    const options: Intl.NumberFormatOptions = { minimumIntegerDigits: 2 };
+    const hours = date.getUTCHours().toLocaleString(locale, options);
+    const minutes = date.getUTCMinutes().toLocaleString(locale, options);
+    return `(${hours}:${minutes} MSK)`;
+  }
+
 }
 
 export default EmbedMessageMapper;
