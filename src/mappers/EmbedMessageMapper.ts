@@ -97,7 +97,7 @@ class EmbedMessageMapper {
         `${incursionInfo.constellationName} is now in ${incursionInfo.state} state`
       )
       .setDescription(
-        `Detected on ${EmbedMessageMapper.dateToEveTimeString(createAtDate)} ${EmbedMessageMapper.dateToMskTimeString(createAtDate)}`
+        `\`\`\`Started ${EmbedMessageMapper.dateToEveTimeString(createAtDate)} ${EmbedMessageMapper.dateToMskTimeString(createAtDate)}\`\`\``
       )
       .setThumbnail(`${incursionInfo.regionIconUrl}`)
       .setColor(color)
@@ -138,7 +138,7 @@ class EmbedMessageMapper {
     const hours = date.getUTCHours().toLocaleString(locale, options);
     const minutes = date.getUTCMinutes().toLocaleString(locale, options);
 
-    return `${year}-${month}-${day} at ${hours}:${minutes} EVE Time`;
+    return `${year}-${month}-${day} - ${hours}:${minutes} ET`;
   }
 
   private static dateToMskTimeString(date: Date): string {
