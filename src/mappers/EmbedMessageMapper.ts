@@ -104,22 +104,19 @@ class EmbedMessageMapper {
       .addFields([
         {
           name: "Incursion information:",
-          value: `**Distance from last incursion:** ${lastIncursionDistanceMessage}\n**Influence level:** ${Math.round(
+          value: `\>\>\> **From last:** ${lastIncursionDistanceMessage}\n**Influence:** ${Math.round(
             incursionInfo.influence * 100
-          )}%\n**Island constellation:** ${
+          )}%\n**Island:** ${
             incursionInfo.isIslandConstellation
           }`,
           inline: true,
         },
         {
           name: `Constellation layout:`,
-          value: `**Headquarter:** ${
-            incursionInfo.headquarterSystem
-          }\n**Staging:** ${
-            incursionInfo.stagingSystem
-          }\n**Vanguards:** ${incursionInfo.vanguardSystems.join(
-            ", "
-          )}\n**Assaults:** ${incursionInfo.assaultSystems.join(", ")}`,
+          value: `\>\>\> **HQ:** ${incursionInfo.headquarterSystem
+          }\n**VG:** ${incursionInfo.vanguardSystems.join(", ")
+          }\n**AS:** ${incursionInfo.assaultSystems.join(", ")
+          }\n**ST:** ${incursionInfo.stagingSystem}`,
           inline: true,
         },
       ])
