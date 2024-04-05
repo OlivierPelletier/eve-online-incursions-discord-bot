@@ -130,7 +130,7 @@ class EmbedMessageMapper {
     const locale: Intl.LocalesArgument = "en-US";
     const options: Intl.NumberFormatOptions = { minimumIntegerDigits: 2 };
     const year = date.getUTCFullYear();
-    const month = date.getUTCMonth().toLocaleString(locale, options);
+    const month = (date.getUTCMonth() - 1).toLocaleString(locale, options);
     const day = date.getUTCDate().toLocaleString(locale, options);
     const hours = date.getUTCHours().toLocaleString(locale, options);
     const minutes = date.getUTCMinutes().toLocaleString(locale, options);
