@@ -10,7 +10,7 @@ An EVE Online Discord bot for incursions enthousiast.
 
 ### Note about sponsors
 
-New features for this bot are mainly motivated by ISK and PLEX donations. If you want to sponsor a new feature, DM me on discord (Opet#1246).
+New features for this bot are mainly motivated by ISK and PLEX donations. If you want to sponsor a new feature, DM me on discord (opet).
 
 ## Bot features
 
